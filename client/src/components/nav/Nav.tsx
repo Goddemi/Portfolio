@@ -12,15 +12,30 @@ const Nav: React.FC = () => {
   return (
     <>
       <NavSpace>
+        <NavContent> Portfolio</NavContent>
         {navigation.map((ele) => (
-          <NavLink to={ele.to}>{ele.name}</NavLink>
+          <NavContent>
+            <NavLink to={ele.to}>{ele.name}</NavLink>
+          </NavContent>
         ))}
       </NavSpace>
-      ;
     </>
   );
 };
 
 export default Nav;
 
-const NavSpace = styled.nav``;
+const NavSpace = styled.nav`
+  background-color: #181925;
+  width: 300px;
+  height: 100vh;
+`;
+
+const NavContent = styled.div`
+  padding: 20px 40px;
+  background-color: gray;
+  font-size: 20px;
+  &:first-child {
+    padding-left: 30px;
+  }
+`;
