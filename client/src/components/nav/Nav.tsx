@@ -2,8 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
+interface Navigation {
+  name: string;
+  to: string;
+}
+
 const Nav: React.FC = () => {
-  const navigation = [
+  const navigation: Array<Navigation> = [
     { name: "about", to: "/" },
     { name: "projects", to: "/projects" },
     { name: "skills", to: "/skills" },
@@ -13,9 +18,9 @@ const Nav: React.FC = () => {
     <>
       <NavSpace>
         <NavContent> Portfolio</NavContent>
-        {navigation.map((ele) => (
+        {navigation.map(({ name, to }) => (
           <NavContent>
-            <NavLink to={ele.to}>{ele.name}</NavLink>
+            <NavLink to={to}>{name}</NavLink>
           </NavContent>
         ))}
       </NavSpace>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "./header/Header";
 import Nav from "./nav/Nav";
 
-const Main = () => {
+const Main: React.FC = () => {
   return (
     <Container>
       <Nav />

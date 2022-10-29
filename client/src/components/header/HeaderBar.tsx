@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderBar = () => {
+const HeaderBar: React.FC = () => {
   return <div></div>;
 };
 

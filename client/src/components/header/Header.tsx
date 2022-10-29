@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeaderBar from "./HeaderBar";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <HeaderBar />
