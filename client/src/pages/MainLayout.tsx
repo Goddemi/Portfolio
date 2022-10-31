@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "../components/header/Header";
 import Nav from "../components/nav/Nav";
 
-const Main: React.FC = () => {
+const MainLayout: React.FC = () => {
   const params = useParams();
 
   return (
@@ -21,7 +21,7 @@ const Main: React.FC = () => {
   );
 };
 
-export default Main;
+export default MainLayout;
 
 const Container = styled.div`
   display: flex;
