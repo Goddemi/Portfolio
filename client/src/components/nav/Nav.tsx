@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { BsChevronDown } from "react-icons/bs";
 
 interface Navigation {
   name: string;
@@ -20,7 +21,10 @@ const Nav: React.FC = () => {
         <NavContent> Portfolio</NavContent>
         {navigation.map(({ name, to }) => (
           <NavContent>
-            <NavLink to={to}>{name}</NavLink>
+            <NavLink to={to}>
+              <BsChevronDown />
+              {name}
+            </NavLink>
           </NavContent>
         ))}
       </NavSpace>

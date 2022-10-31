@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
     #root {
     margin : 0 auto;
 }
+
+    h1 {
+        font-size: 45px;
+    }
+
 `;
 
 export default GlobalStyle;
