@@ -1,18 +1,25 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+
 import styled from "styled-components";
 import HeaderBar from "./HeaderBar";
 
-//About me
-
 const Header: React.FC = () => {
+  const location = useLocation();
+  const title =
+    location.pathname === "/about"
+      ? "About me"
+      : location.pathname === "/projects"
+      ? "Projects"
+      : location.pathname === "/skills"
+      ? "Skills"
+      : "안녕하세요!";
+
   return (
     <HeaderContainer>
       <HeaderBar />
       <HeaderTitle>
-        <h1>//About me</h1>
-        {/* <span>const </span>
-        <span>이강철</span>
-        <span> = {"{  }"}</span> */}
+        <h1>{title}</h1>
       </HeaderTitle>
     </HeaderContainer>
   );
