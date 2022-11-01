@@ -18,8 +18,8 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  width: 350px;
-  height: 250px;
+  width: 370px;
+  height: 290px;
   margin: 0 80px;
   margin-top: 40px;
   background-color: white;

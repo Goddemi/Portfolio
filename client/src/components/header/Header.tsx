@@ -27,7 +27,9 @@ const Header: React.FC = () => {
 
 export default Header;
 
-const HeaderContainer = styled.header``;
+const HeaderContainer = styled.header`
+  margin-bottom: 90px;
+`;
 
 const HeaderTitle = styled.h1`
   padding-top: 50px;

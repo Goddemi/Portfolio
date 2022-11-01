@@ -22,8 +22,7 @@ const Declaration: React.FC<Props> = ({ variable, content }) => {
 export default Declaration;
 
 const Box = styled.div`
-  padding: 80px;
-
+  margin-bottom: 40px;
   span {
     font-size: 30px;
     color: ${(props) => props.theme.purple};
