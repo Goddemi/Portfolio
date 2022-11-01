@@ -15,7 +15,6 @@ const MainLayout: React.FC = () => {
         <Article>
           <Outlet></Outlet>
         </Article>
-        {/* // 아티클 자리에 요소들이 들어가면 돼.아웃렛 개념을사용하자. */}
       </Section>
     </Container>
   );

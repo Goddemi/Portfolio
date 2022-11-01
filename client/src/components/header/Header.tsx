@@ -23,6 +23,6 @@ export default Header;
 const HeaderContainer = styled.header``;
 
 const HeaderTitle = styled.h1`
-  padding-top: 90px;
+  padding-top: 50px;
   text-align: center;
 `;

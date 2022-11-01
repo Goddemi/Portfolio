@@ -10,7 +10,7 @@ interface Navigation {
 
 const Nav: React.FC = () => {
   const navigation: Array<Navigation> = [
-    { name: "about", to: "/" },
+    { name: "about", to: "/about" },
     { name: "projects", to: "/projects" },
     { name: "skills", to: "/skills" },
   ];
@@ -18,10 +18,14 @@ const Nav: React.FC = () => {
   return (
     <>
       <NavSpace>
-        <NavContent> Portfolio</NavContent>
+        <NavContent>
+          <NavLink to={"/"} className="navLink">
+            Portfolio
+          </NavLink>
+        </NavContent>
         {navigation.map(({ name, to }) => (
           <NavContent>
-            <NavLink to={to}>
+            <NavLink to={to} className="navLink">
               <BsChevronDown />
               {name}
             </NavLink>
@@ -44,7 +48,12 @@ const NavContent = styled.div`
   padding: 20px 40px;
   background-color: gray;
   font-size: 20px;
+
   &:first-child {
     padding-left: 30px;
+  }
+
+  .navLink:visited {
+    color: white;
   }
 `;
