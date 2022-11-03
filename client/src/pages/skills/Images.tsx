@@ -16,7 +16,7 @@ const Images = () => {
     <Container>
       {" "}
       <Mac src={mac} />
-      <Js src={js} onClick={() => console.log("hi")} />
+      <Js src={js} />
       <Ts src={ts} />
       <ReactImg src={reactImg} />
       <ReduxImg src={reduxImg} />

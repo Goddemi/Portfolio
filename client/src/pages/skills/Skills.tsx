@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Images from "./Images";
 import Description from "./Descripton";
@@ -7,10 +7,12 @@ import { MY_SKILLS } from "./data/MY_SKILLS";
 // import mac from "./mac.png";
 
 const Skills = () => {
+  const [skill, setSkill] = useState("<- You can click skills !");
+
   return (
     <Container>
       <Images />
-      <Description />
+      {/* <Description name={name} description={description} /> */}
     </Container>
   );
 };
