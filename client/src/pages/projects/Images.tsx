@@ -3,9 +3,6 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import honey from "../../assets/myhoneytripImage.jpg";
-import turtle from "../../assets/turtlehomeImage.jpg";
-import weggle from "../../assets/weggleImage.jpg";
 
 interface Props {
   imgLinks: string[];
