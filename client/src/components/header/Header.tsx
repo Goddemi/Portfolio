@@ -13,11 +13,13 @@ const Header: React.FC = () => {
       ? "Projects"
       : location.pathname === "/skills"
       ? "Skills"
-      : "안녕하세요!";
+      : "Portfolio";
+
+  //nav메뉴를 클릭하면 이동하듯이, header바를 클릭하면 이동하기 때문에 같은 값으로 활용할 수 있겠다.
 
   return (
     <HeaderContainer>
-      <HeaderBar path={title === "안녕하세요!" ? " " : title} />
+      <HeaderBar title={title === "Portfolio" ? " " : title} />
       <HeaderTitle>
         <h1>{title}</h1>
       </HeaderTitle>

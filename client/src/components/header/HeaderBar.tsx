@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsChevronCompactRight } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 interface Props {
-  path: string | " ";
+  title: string | " ";
 }
 
-const HeaderBar: React.FC<Props> = ({ path }) => {
+const HeaderBar: React.FC<Props> = ({ title }) => {
   return (
     <Content>
-      <span>portfolio </span>
+      <NavLink className="navLink" to={"/"}>
+        portfolio{" "}
+      </NavLink>
       <div>
         <BsChevronCompactRight />
       </div>{" "}
-      <span>{path}</span>
+      <span className="navLink">{title}</span>
     </Content>
   );
 };
@@ -25,4 +28,16 @@ const Content = styled.div`
   padding: 10px;
   font-size: 18px;
   color: gray;
+
+  .navLink {
+    cursor: pointer;
+    text-decoration-line: none;
+
+    &:visited {
+      color: gray;
+    }
+    &:hover {
+      color: white;
+    }
+  }
 `;

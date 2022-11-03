@@ -7,7 +7,6 @@ interface Navigation {
   name: string;
   to: string;
 }
-
 const Nav: React.FC = () => {
   const navigation: Array<Navigation> = [
     { name: "About", to: "/about" },
@@ -26,8 +25,7 @@ const Nav: React.FC = () => {
         {navigation.map(({ name, to }) => (
           <NavContent>
             <NavLink to={to} className="navLink">
-              <BsChevronDown />
-              {name}
+              <BsChevronDown /> {name}
             </NavLink>
           </NavContent>
         ))}
@@ -46,11 +44,14 @@ const NavSpace = styled.nav`
 
 const NavContent = styled.div`
   padding: 20px 40px;
-  background-color: gray;
   font-size: 20px;
 
   &:first-child {
     padding-left: 30px;
+  }
+
+  .navLink {
+    text-decoration-line: none;
   }
 
   .navLink:visited {
