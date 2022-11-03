@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const location = useLocation();
   const title =
     location.pathname === "/about"
-      ? "About me"
+      ? "About"
       : location.pathname === "/projects"
       ? "Projects"
       : location.pathname === "/skills"
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <HeaderBar />
+      <HeaderBar path={title === "안녕하세요!" ? " " : title} />
       <HeaderTitle>
         <h1>{title}</h1>
       </HeaderTitle>

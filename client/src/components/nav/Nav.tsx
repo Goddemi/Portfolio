@@ -10,9 +10,9 @@ interface Navigation {
 
 const Nav: React.FC = () => {
   const navigation: Array<Navigation> = [
-    { name: "about", to: "/about" },
-    { name: "projects", to: "/projects" },
-    { name: "skills", to: "/skills" },
+    { name: "About", to: "/about" },
+    { name: "Projects", to: "/projects" },
+    { name: "Skills", to: "/skills" },
   ];
 
   return (

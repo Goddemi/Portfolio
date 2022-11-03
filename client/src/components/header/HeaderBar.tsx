@@ -2,14 +2,18 @@ import React from "react";
 import { BsChevronCompactRight } from "react-icons/bs";
 import styled from "styled-components";
 
-const HeaderBar: React.FC = () => {
+interface Props {
+  path: string | " ";
+}
+
+const HeaderBar: React.FC<Props> = ({ path }) => {
   return (
     <Content>
-      portfolio{" "}
+      <span>portfolio </span>
       <div>
         <BsChevronCompactRight />
       </div>{" "}
-      About me
+      <span>{path}</span>
     </Content>
   );
 };

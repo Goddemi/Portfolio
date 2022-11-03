@@ -8,6 +8,7 @@ const MainLayout: React.FC = () => {
   return (
     <Container>
       <Nav />
+
       <Section>
         <Header></Header>
         <Article>
@@ -27,11 +28,13 @@ const Container = styled.div`
 const Section = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100vh;
   background-color: ${(props) => props.theme.black};
   color: white;
 `;
 
-const Article = styled.article``;
+const Article = styled.article`
+  display: flex;
+  justify-content: center;
+`;
