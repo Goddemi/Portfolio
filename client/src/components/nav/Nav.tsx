@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
           </NavLink>
         </NavContent>
         {navigation.map(({ name, to }) => (
-          <NavContent>
+          <NavContent key={name}>
             <NavLink to={to} className="navLink">
               <BsChevronDown /> {name}
             </NavLink>

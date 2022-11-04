@@ -2,24 +2,22 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Images from "./Images";
 import Description from "./Descripton";
-
 import { SkillDataType } from "./type/SkillType";
-import { useAxios } from "../../hooks/useAxios";
-import { SKILL_URL } from "../../config";
+import { getSkills } from "./api/getSkills";
 
 const Skills = () => {
-  const { response } = useAxios({
-    method: "GET",
-    url: SKILL_URL,
-  });
-
   const [skillData, setSkillData] = useState<SkillDataType | undefined>();
   const [skill, setSkill] = useState("<- You can click skills !");
 
+  useEffect(() => {
+    getSkills().then((data) => {
+      setSkillData(data);
+    });
+  }, []);
+
   return (
     <Container>
-      {response && console.log(response)}
-      <Images />
+      <Images skillData={skillData} />
       <Description />
     </Container>
   );

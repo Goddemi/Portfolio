@@ -54,7 +54,7 @@ const ProjectCarousel = () => {
     <Slider {...settings}>
       {IMAGE_DATA.map(({ name, links }) => {
         return (
-          <Project>
+          <Project key={name}>
             <Header>{name}</Header>
             <Content>
               <ImageBox>

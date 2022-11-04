@@ -1,10 +1,83 @@
 [
-  { "id": "js", "name": "Javascript", "description": "블라블라" },
-  { "id": "ts", "name": "Typescript", "description": "dPDP가나" },
-  { "id": "react", "name": "React", "description": "아아아아아아아" },
-  { "id": "redux", "name": "Redux", "description": "오오오오ㅗ오옹" },
-  { "id": "node", "name": "nodeJS", "description": "aaasdff" },
-  { "id": "css", "name": "Sass & Styled-components", "description": "aaaa" },
-  { "id": "aws", "name": "AWS", "description": "Aaa" },
-  { "id": "git", "name": "Git", "description": "aasdf" }
+  {
+    "id": "js",
+    "name": "Javascript",
+    "description": "블라블라",
+    "img_url": "/reserve/imgs/jsImg.png",
+    "top": "50px",
+    "left": "30px",
+    "width": "250px"
+  },
+  {
+    "id": "ts",
+    "name": "Typescript",
+    "description": "dPDP가나",
+    "img_url": "/reserve/imgs/tsImg.png",
+    "top": "200px",
+    "left": "20px",
+    "width": "200px"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "description": "아아아아아아아",
+    "img_url": "/reserve/imgs/reactImg.png",
+    "top": "30px",
+    "left": "300px",
+    "width": "130px"
+  },
+  {
+    "id": "redux",
+    "name": "Redux",
+    "description": "오오오오ㅗ오옹",
+    "img_url": "/reserve/imgs/reduxImg.png",
+    "top": "30px",
+    "left": "430px",
+    "width": "200px"
+  },
+  {
+    "id": "node",
+    "name": "nodeJS",
+    "description": "aaasdff",
+    "img_url": "/reserve/imgs/nodeImg.png",
+    "top": "350px",
+    "left": "30px",
+    "width": "250px"
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "description": "aaaa",
+    "img_url": "/reserve/imgs/sassImg.png",
+    "top": "350px",
+    "left": "320px",
+    "width": "200px"
+  },
+  {
+    "id": "styled",
+    "name": "Styled-components",
+    "description": "aaaa",
+    "img_url": "/reserve/imgs/styledImg.png",
+    "top": "250px",
+    "left": "500px",
+    "width": "120px"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "description": "Aaa",
+    "img_url": "/reserve/imgs/awsImg.png",
+    "top": "410px",
+    "left": "550px",
+    "width": "110px"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "description": "aasdf",
+    "img_url": "/reserve/imgs/gitImg.png",
+    "top": "280px",
+    "left": "200px",
+    "width": "100px"
+  }
 ]
