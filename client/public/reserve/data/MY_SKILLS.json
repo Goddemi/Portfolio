@@ -1,0 +1,10 @@
+[
+  { "id": "js", "name": "Javascript", "description": "블라블라" },
+  { "id": "ts", "name": "Typescript", "description": "dPDP가나" },
+  { "id": "react", "name": "React", "description": "아아아아아아아" },
+  { "id": "redux", "name": "Redux", "description": "오오오오ㅗ오옹" },
+  { "id": "node", "name": "nodeJS", "description": "aaasdff" },
+  { "id": "css", "name": "Sass & Styled-components", "description": "aaaa" },
+  { "id": "aws", "name": "AWS", "description": "Aaa" },
+  { "id": "git", "name": "Git", "description": "aasdf" }
+]
