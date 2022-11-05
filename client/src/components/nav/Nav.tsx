@@ -37,16 +37,4 @@ const NavSpace = styled.nav`
 const NavHeader = styled.div`
   padding: 20px 40px;
   font-size: 20px;
-
-  &:first-child {
-    padding-left: 30px;
-  }
-
-  .navLink {
-    text-decoration-line: none;
-  }
-
-  .navLink:visited {
-    color: white;
-  }
 `;

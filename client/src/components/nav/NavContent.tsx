@@ -24,8 +24,9 @@ const NavContent = () => {
         return (
           <NavMenu
             key={name}
-            onClick={() => {
-              menuToggle(name);
+            onClick={(e) => {
+              const target = e.target as Element;
+              target.innerHTML == name && menuToggle(name);
             }}
           >
             <NavLink to={to} className="navLink">
@@ -59,4 +60,11 @@ const NavDetails = styled.div`
   padding-left: 5px;
   font-size: 14px;
   color: gray;
+  cursor: default;
+
+  span {
+    &:hover {
+      color: white;
+    }
+  }
 `;
