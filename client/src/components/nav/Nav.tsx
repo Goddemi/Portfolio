@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
 export default Nav;
 
 const NavSpace = styled.nav`
-  background-color: #181925;
+  background-color: ${(props) => props.theme.navy};
   width: 330px;
   height: 100vh;
 

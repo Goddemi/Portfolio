@@ -4,6 +4,7 @@ const theme = {
   purple: "#c094e3",
   green: "#CAE797",
   blue: "#89AAF9",
+  navy: "#0F111A",
 
   radius: "20px",
 };

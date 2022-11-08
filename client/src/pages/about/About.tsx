@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Declaration from "./Declaration";
-import Archive from "./Archive";
-import Introduce from "./Introduce";
+import { AboutData } from "../../assets/AboutData";
+import ContentBox from "./ContentBox";
 
 const About: React.FC = () => {
   return (
     <Container>
-      <Declaration variable="ME" content={<Introduce />} />
+      {AboutData.map(({ variable, content }) => {
+        return <ContentBox variable={variable} content={content} />;
+      })}
     </Container>
   );
 };
@@ -15,6 +16,9 @@ const About: React.FC = () => {
 export default About;
 
 const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0 20px;
   color: white;
 `;

@@ -43,7 +43,7 @@ const Section = styled.section`
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: ${(props) => props.theme.black};
+  background-color: ${(props) => props.theme.navy};
   color: white;
 `;
 
