@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+const me = { name: "hi", age: "dkdk" };
+
 const Introduce = () => {
   const name = { name: "이강철", age: 32 };
   return (

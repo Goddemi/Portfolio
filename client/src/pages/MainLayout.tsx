@@ -8,7 +8,6 @@ const MainLayout: React.FC = () => {
   return (
     <Container>
       <Nav />
-
       <Section>
         <Header></Header>
         <Article>

@@ -22,7 +22,7 @@ export default Nav;
 
 const NavSpace = styled.nav`
   background-color: #181925;
-  width: 300px;
+  width: 330px;
   height: 100vh;
 
   .navLink {
