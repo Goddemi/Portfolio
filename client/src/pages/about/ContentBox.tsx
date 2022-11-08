@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 type Content = {
-  keyName: any;
+  keyName?: any;
   value: any;
 };
 
@@ -16,17 +16,26 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
     <Container>
       <Declare>const</Declare>
       <Variable> {variable} </Variable>
-      <Bracket>= {"{"} </Bracket>
+      <Bracket>= {variable === "introduce" ? "[" : "{"} </Bracket>
       {content.map(({ keyName, value }) => {
         return (
           <Content>
-            {" "}
-            <Key>{keyName} : </Key>
-            <Value>{value} </Value>
+            {variable !== "introduce" ? (
+              <>
+                <Key>&nbsp;&nbsp; {keyName}&nbsp;:&nbsp;</Key>
+                <Value> {value}</Value>
+                <Key>,</Key>
+              </>
+            ) : (
+              <>
+                <Value> &nbsp;&nbsp; {value}</Value>
+                <Key>,</Key>
+              </>
+            )}
           </Content>
         );
       })}
-      <Bracket>{"}"}</Bracket>
+      <Bracket>{variable === "introduce" ? "]" : "}"}</Bracket>
     </Container>
   );
 };
@@ -37,11 +46,11 @@ const Container = styled.div`
   width: 550px;
   height: 300px;
   margin: 10px 30px;
-  padding: 10px 10px;
-  border: 1px solid navy;
+  padding: 20px;
+  border: 1px solid gray;
   border-radius: ${(props) => props.theme.radius};
   span {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
@@ -66,5 +75,6 @@ const Key = styled.span`
 `;
 
 const Value = styled.span`
+  line-height: 22px;
   color: ${(props) => props.theme.green};
 `;
