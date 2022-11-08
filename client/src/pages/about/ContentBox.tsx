@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Content from "./Content";
-
 type Content = {
   keyName: any;
   value: any;
@@ -16,35 +14,23 @@ interface Props {
 const ContentBox: React.FC<Props> = ({ variable, content }) => {
   return (
     <Container>
-      <span className="declare">const</span>
-      <span className="variable"> {variable} </span>
-      <span className="bracket">= {"{"} </span>
+      <Declare>const</Declare>
+      <Variable> {variable} </Variable>
+      <Bracket>= {"{"} </Bracket>
       {content.map(({ keyName, value }) => {
         return (
-          <Declare>
+          <Content>
             {" "}
-            <span>{keyName} : </span>
-            <span>{value} </span>
-          </Declare>
+            <Key>{keyName} : </Key>
+            <Value>{value} </Value>
+          </Content>
         );
       })}
-      <span className="bracket">{"}"}</span>
+      <Bracket>{"}"}</Bracket>
     </Container>
   );
 };
-// const contents = (
-//   <>
-//     {" "}
-//     <Content keyName="name" value="이 강철" />
-//     <Content
-//       keyName="introduce"
-//       value="안녕하세요, 이이이더더 합니다. 허허허허 합니다. 호호호호도도보보
-//     합니다. 아아아오오오 합니다."
-//     />
-//     <Content keyName={<BsGithub />} value={gitHubLink} />
-//     <Content keyName={<SlNote />} value={blogLink} />
-//   </>
-// );
+
 export default ContentBox;
 
 const Container = styled.div`
@@ -54,21 +40,31 @@ const Container = styled.div`
   padding: 10px 10px;
   border: 1px solid navy;
   border-radius: ${(props) => props.theme.radius};
+  span {
+    font-size: 20px;
+  }
 `;
 
-const Declare = styled.div`
-  margin-bottom: 40px;
-  span {
-    font-size: 30px;
-  }
+const Declare = styled.span`
+  color: ${(props) => props.theme.purple};
+`;
 
-  .declare {
-    color: ${(props) => props.theme.purple};
-  }
-  .variable {
-    color: white;
-  }
-  .bracket {
-    color: ${(props) => props.theme.purple};
-  }
+const Variable = styled.span`
+  color: white;
+`;
+
+const Bracket = styled.span`
+  color: ${(props) => props.theme.purple};
+`;
+
+const Content = styled.div`
+  margin: 10px 0;
+`;
+
+const Key = styled.span`
+  color: gray;
+`;
+
+const Value = styled.span`
+  color: ${(props) => props.theme.green};
 `;
