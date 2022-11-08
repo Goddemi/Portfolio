@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Declaration from "./Declaration";
-import Archiving from "./Archiving";
+import Archive from "./Archive";
 import Introduce from "./Introduce";
 
 const About: React.FC = () => {
   return (
     <Container>
-      <Declaration variable="me" content={<Introduce />} />
-      <Declaration variable="Archiving" content={<Archiving />} />
+      <Declaration variable="ME" content={<Introduce />} />
     </Container>
   );
 };
@@ -16,5 +15,6 @@ const About: React.FC = () => {
 export default About;
 
 const Container = styled.div`
+  padding: 0 20px;
   color: white;
 `;

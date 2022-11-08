@@ -26,15 +26,15 @@ const NavContent = () => {
             key={name}
             onClick={(e) => {
               const target = e.target as Element;
-              target.innerHTML == name && menuToggle(name);
+              target.innerHTML === name && menuToggle(name);
             }}
           >
             <NavLink to={to} className="navLink">
               <BsChevronDown /> <span>{name}</span>
               {isOpen[name] &&
-                details?.map((detail) => {
+                details?.map((detail, i) => {
                   return (
-                    <NavDetails>
+                    <NavDetails key={i}>
                       <BsChevronRight />
                       <span>{detail}</span>
                     </NavDetails>

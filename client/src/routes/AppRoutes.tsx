@@ -4,7 +4,7 @@ import MainLayout from "../pages/MainLayout";
 import About from "../pages/about/About";
 import Projects from "../pages/projects/Projects";
 import Skills from "../pages/skills/Skills";
-import Contact from "../pages/contact/contact";
+import Contact from "../pages/contact/Contact";
 
 const AppRoutes = () => {
   return (

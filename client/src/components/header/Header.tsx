@@ -1,25 +1,15 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import HeaderBar from "./HeaderBar";
 
-const Header: React.FC = () => {
-  const location = useLocation();
-  const title =
-    location.pathname === "/about"
-      ? "About"
-      : location.pathname === "/projects"
-      ? "Projects"
-      : location.pathname === "/skills"
-      ? "Skills"
-      : "Portfolio";
+interface Props {
+  title: string;
+}
 
-  //nav메뉴를 클릭하면 이동하듯이, header바를 클릭하면 이동하기 때문에 같은 값으로 활용할 수 있겠다.
-
+const Header: React.FC<Props> = ({ title }) => {
   return (
     <HeaderContainer>
-      <HeaderBar title={title === "Portfolio" ? " " : title} />
+      <HeaderBar title={title === "안녕하세요 !" ? " " : title} />
       <HeaderTitle>
         <h1>{title}</h1>
       </HeaderTitle>
@@ -33,7 +23,7 @@ const HeaderContainer = styled.header`
   margin-bottom: 90px;
 `;
 
-const HeaderTitle = styled.h1`
+const HeaderTitle = styled.div`
   padding-top: 50px;
   text-align: center;
 `;

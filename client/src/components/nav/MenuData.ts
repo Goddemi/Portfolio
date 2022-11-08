@@ -10,7 +10,7 @@ export const MENU_DATA: Array<MenuData> = [
     name: "Projects",
     to: "/projects",
     details: [
-      "Portfolio",
+      "Portfolio site",
       "Airline ticket site",
       "Product register page",
       "Furniture commerce site",

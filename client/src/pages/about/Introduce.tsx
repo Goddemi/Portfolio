@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const me = { name: "hi", age: "dkdk" };
-
 const Introduce = () => {
-  const name = { name: "이강철", age: 32 };
   return (
     <Content>
       <Key>name :</Key>
-      <Value>'이강철'</Value>
-      <Key>, age :</Key>
-      <Value>32</Value>
+      <Value>'이 강철'</Value>
+      <Key>, introduce : </Key>
+      <Value>
+        "안녕하세요, 이이이더더 합니다. 허허허허 합니다. 호호호호도도보보
+        합니다. 아아아오오오 합니다. "
+      </Value>
     </Content>
   );
 };
@@ -18,12 +18,15 @@ const Introduce = () => {
 export default Introduce;
 
 const Content = styled.div`
-  margin: 20px;
   color: white;
+  span {
+    display: inline-block;
+    padding: 10px 0;
+  }
 `;
 
 const Key = styled.span`
-  color: white;
+  color: gray;
 `;
 
 const Value = styled.span`

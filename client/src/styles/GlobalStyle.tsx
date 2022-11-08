@@ -10,19 +10,23 @@ const GlobalStyle = createGlobalStyle`
     outline : 0;
     box-sizing: border-box;
 }   
-    
     body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
     #root {
     margin : 0 auto;
-}
-
+}   
     h1 {
         font-size: 45px;
-    }
+}
+    a {
+    color : white;
+    text-decoration-line: none;
 
+     a:visited {
+    color: white;
+     }
+}
 `;
 
 export default GlobalStyle;

@@ -10,11 +10,11 @@ const Declaration: React.FC<Props> = ({ variable, content }) => {
   return (
     <Box>
       {" "}
-      <span>const</span>
-      <span> {variable} </span>
-      <span>
-        = {"{"} {content} {"}"}
-      </span>
+      <span className="declare">const</span>
+      <span className="variable"> {variable} </span>
+      <span className="bracket">= {"{"} </span>
+      <span>{content} </span>
+      <span className="bracket">{"}"}</span>
     </Box>
   );
 };
@@ -25,10 +25,15 @@ const Box = styled.div`
   margin-bottom: 40px;
   span {
     font-size: 30px;
-    color: ${(props) => props.theme.purple};
+  }
 
-    &:nth-child(2) {
-      color: white;
-    }
+  .declare {
+    color: ${(props) => props.theme.purple};
+  }
+  .variable {
+    color: white;
+  }
+  .bracket {
+    color: ${(props) => props.theme.purple};
   }
 `;
