@@ -6,9 +6,12 @@ const Greeting = () => {
     <Container>
       <ProfileImg src={process.env.PUBLIC_URL + "/reserve/imgs/profile.jpeg"} />
       <SayHello>
-        <span>성실하고 책임감 있는,</span>
-        <span>프론트엔드 개발자 이강철 입니다.</span>
-        <span className="blinking">|</span>
+        <MyName>프론트엔드 개발자 이강철 입니다.</MyName>
+        <KeySentence>
+          <span className="colored">직관적인 UI/UX</span>와{" "}
+          <span className="colored">클린코드</span>를 추구합니다.
+          <span className="blinking">|</span>
+        </KeySentence>
       </SayHello>
     </Container>
   );
@@ -22,18 +25,20 @@ const Container = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 350px;
+  width: 380px;
   border-radius: 20px;
 `;
 
 const SayHello = styled.div`
-  padding: 100px 50px;
-  span {
-    font-size: 40px;
-    margin: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    &:first-child {
-      display: block;
+  span {
+    font-size: 35px;
+
+    .colored {
+      color: ${(props) => props.theme.purple};
     }
   }
   .blinking {
@@ -44,4 +49,13 @@ const SayHello = styled.div`
       opacity: 0;
     }
   }
+`;
+
+const MyName = styled.span`
+  display: block;
+  margin: 30px;
+`;
+
+const KeySentence = styled.span`
+  margin: 30px;
 `;

@@ -20,7 +20,7 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
       {content.map(({ keyName, value }) => {
         return (
           <Content>
-            {variable !== "introduce" ? (
+            {variable !== "Five_Keywords" ? (
               <>
                 <Key>&nbsp;&nbsp; {keyName}&nbsp;:&nbsp;</Key>
                 <Value> {value}</Value>
@@ -50,7 +50,7 @@ const Container = styled.div`
   border: 1px solid gray;
   border-radius: ${(props) => props.theme.radius};
   span {
-    font-size: 17px;
+    font-size: 18px;
   }
 `;
 
@@ -75,6 +75,6 @@ const Key = styled.span`
 `;
 
 const Value = styled.span`
-  line-height: 22px;
+  line-height: 25px;
   color: ${(props) => props.theme.green};
 `;

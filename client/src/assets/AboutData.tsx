@@ -3,65 +3,91 @@ import { BsGithub } from "react-icons/bs";
 import { SlNote } from "react-icons/sl";
 
 const gitHubLink = (
-  <a href="https://github.com/Goddemi">https://github.com/Goddemi</a>
+  <>
+    <BsGithub />{" "}
+    <a href="https://github.com/Goddemi">https://github.com/Goddemi</a>
+  </>
 );
 
 const blogLink = (
-  <a href="https://goddemi.tistory.com/">https://goddemi.tistory.com/</a>
+  <>
+    <SlNote />{" "}
+    <a href="https://goddemi.tistory.com/">https://goddemi.tistory.com/</a>
+  </>
+);
+
+const melonLink = (
+  <a href="https://www.melon.com/artist/timeline.htm?artistId=944866">
+    MelonLink
+  </a>
 );
 
 export const AboutData = [
   {
     variable: "ME",
     content: [
-      { keyName: "name", value: "'이 강철'" },
-      { keyName: "MBTI", value: "'INTP'" },
+      { keyName: "이름", value: "'이 강철'" },
+
       {
-        keyName: "strength",
-        value: "['성실함', '이해력', '긍정적', '책임감', '커뮤니케이션 능력']",
+        keyName: "기술",
+        value: "[ 'Js', 'Ts', 'React', 'Redux', 'Nodejs' ]",
       },
-      { keyName: <SlNote />, value: blogLink },
-      { keyName: <BsGithub />, value: gitHubLink },
+      { keyName: "Blog", value: blogLink },
+      { keyName: "Github", value: gitHubLink },
     ],
   },
   {
-    variable: "introduce",
+    variable: "Five_Keywords",
     content: [
+      { value: "'성실함과 꾸준함" },
       {
-        value:
-          "'실력있는 개발자로 성장하고 싶은 욕심이 있습니다. 충분한 시간을 공부에 투자합니다.'",
+        value: "'새로운 것을 배울때의 즐거움'",
       },
       {
-        value:
-          "'새로운 것을 배우기 좋아합니다. 따라만 치는 코딩이 아닌 이해하는 코딩을 하려 노력합니다.'",
+        value: "'긍정적인 사고'",
       },
       {
-        value:
-          "'소통을 두려워 하지 않습니다. 의도를 빠르게 이해하고 말하고자 하는 바를 잘 전달합니다.'",
+        value: "'문제해결의 짜릿함'",
       },
       {
-        value:
-          "'회사를 통해 성장하고 저 또한 회사에 도움이 되어, 긍정적인 영향을 주고 받을 수 있었으면 좋겠습니다.'",
+        value: "'커뮤니케이션의 핵심을 파악'",
       },
     ],
   },
   {
-    variable: "experience",
+    variable: "Experience",
     content: [
-      { keyName: "위글", value: "'숏폼 영상 커머스 스타트업 인턴 근무'" },
+      {
+        keyName: "위글",
+        value: "'22.08 ~ 22.09 / 숏폼 영상 커머스 스타트업 인턴 근무'",
+      },
       {
         keyName: "위코드",
-        value: "'위코드 코딩부트캠프 프론트엔드 과정 35기 수료'",
+        value: "'22.06 ~ 22.09 / 위코드 프론트엔드 부트캠프 수료'",
       },
-      { keyName: "하나투어", value: "'대리점 영업관리직무'" },
-      { keyName: "숭실대학교", value: "'글로벌 통상학과 학사 졸업'" },
+      { keyName: "하나투어", value: "'18.02 ~ 22.05 / 대리점 영업관리직무'" },
+      {
+        keyName: "숭실대학교",
+        value: "'10.03 ~ 17.02 / 글로벌 통상학과 학사 졸업'",
+      },
     ],
   },
   {
     variable: "ETC",
     content: [
-      { keyName: <BsGithub />, value: gitHubLink },
-      { keyName: <SlNote />, value: blogLink },
+      {
+        keyName: "English",
+        value: "'원활한 회화 및 읽기 쓰기'",
+      },
+      {
+        keyName: "Books",
+        value: "'독서하는 개발자'",
+      },
+      {
+        keyName: "MySongs!",
+        value: melonLink,
+      },
+      { keyName: "MBTI", value: "'INTP'" },
     ],
   },
 ];
