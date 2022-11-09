@@ -20,15 +20,15 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
   };
   return (
     <Slider {...settings}>
-      <Container>
-        <Image src={imgLinks[0]} width={350} height={400} />
-      </Container>
-      <div>
-        <Image src={imgLinks[1]} width={350} height={400} />
-      </div>
-      <div>
-        <Image src={imgLinks[2]} width={350} height={400} />
-      </div>
+      {imgLinks.map((imgLink) => {
+        return (
+          <Image
+            src={process.env.PUBLIC_URL + imgLink}
+            width={350}
+            height={400}
+          />
+        );
+      })}
     </Slider>
   );
 };
@@ -36,6 +36,6 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
 export default Images;
 //
 
-const Container = styled.div``;
-
-const Image = styled.img``;
+const Image = styled.img`
+  border-radius: ${(props) => props.theme.radius};
+`;

@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-type Content = {
-  keyName?: any;
-  value: any;
+type ContentType = {
+  keyName?: string;
+  value?: string | JSX.Element;
 };
 
 interface Props {
   variable: string;
-  content: Content[];
+  content: ContentType[];
 }
 
 const ContentBox: React.FC<Props> = ({ variable, content }) => {
@@ -16,7 +16,7 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
     <Container>
       <Declare>const</Declare>
       <Variable> {variable} </Variable>
-      <Bracket>= {variable === "introduce" ? "[" : "{"} </Bracket>
+      <Bracket>= {variable === "Five_Keywords" ? "[" : "{"} </Bracket>
       {content.map(({ keyName, value }) => {
         return (
           <Content>
@@ -35,7 +35,7 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
           </Content>
         );
       })}
-      <Bracket>{variable === "introduce" ? "]" : "}"}</Bracket>
+      <Bracket>{variable === "Five_Keywords" ? "]" : "}"}</Bracket>
     </Container>
   );
 };

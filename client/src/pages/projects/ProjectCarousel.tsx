@@ -7,36 +7,33 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Images from "./Images";
 
-import honey from "../../assets/myhoneytripImage.jpg";
-import turtle from "../../assets/turtlehomeImage.jpg";
-import weggle from "../../assets/weggleImage.jpg";
-
 const ProjectCarousel = () => {
   const IMAGE_DATA = [
     {
       id: "honey",
       name: "My Honey Trip",
       links: [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
+        "/reserve/imgs/honeytrip1.png",
+        "/reserve/imgs/honeytrip2.png",
+        "/reserve/imgs/honeytrip4.png",
       ],
     },
     {
       id: "weggle",
       name: "Weggle",
       links: [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
+        "/reserve/imgs/weggle1.png",
+        "/reserve/imgs/weggle2.png",
+        "/reserve/imgs/weggle3.png",
       ],
     },
     {
       id: "turtle",
       name: "Turtle Home",
       links: [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg",
+        "/reserve/imgs/ggobuk1.png",
+        "/reserve/imgs/ggobuk2.png",
+        "/reserve/imgs/ggobuk3.png",
       ],
     },
   ];

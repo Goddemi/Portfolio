@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Greeting from "../components/greeting/Greeting";
