@@ -5,7 +5,11 @@ interface MenuData {
 }
 
 export const MENU_DATA: Array<MenuData> = [
-  { name: "About", to: "/about", details: ["Archive"] },
+  {
+    name: "About",
+    to: "/about",
+    details: ["ME", "Five_Keywords", "Experience", "ETC"],
+  },
   {
     name: "Projects",
     to: "/projects",

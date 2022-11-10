@@ -37,7 +37,7 @@ export const AboutData = [
     ],
   },
   {
-    variable: "Five_Keywords",
+    variable: "My_Five_Keywords",
     content: [
       { value: "'성실함과 꾸준함" },
       {
@@ -47,10 +47,10 @@ export const AboutData = [
         value: "'긍정적인 사고'",
       },
       {
-        value: "'문제해결의 짜릿함'",
+        value: "'문제를 어떻게든 해결함'",
       },
       {
-        value: "'커뮤니케이션의 핵심을 파악'",
+        value: "'핵심을 파악하는 커뮤니케이션'",
       },
     ],
   },
@@ -83,11 +83,11 @@ export const AboutData = [
         keyName: "Books",
         value: "'독서하는 개발자'",
       },
+      { keyName: "MBTI", value: "'INTP'" },
       {
-        keyName: "MySongs!",
+        keyName: "MySongs !",
         value: melonLink,
       },
-      { keyName: "MBTI", value: "'INTP'" },
     ],
   },
 ];

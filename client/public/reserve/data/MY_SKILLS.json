@@ -2,7 +2,6 @@
   {
     "id": "js",
     "name": "Javascript",
-    "description": "블라블라",
     "img_url": "/reserve/imgs/jsImg.png",
     "top": 50,
     "left": 30,
@@ -11,7 +10,6 @@
   {
     "id": "ts",
     "name": "Typescript",
-    "description": "dPDP가나",
     "img_url": "/reserve/imgs/tsImg.png",
     "top": 200,
     "left": 20,
@@ -20,7 +18,6 @@
   {
     "id": "react",
     "name": "React",
-    "description": "아아아아아아아",
     "img_url": "/reserve/imgs/reactImg.png",
     "top": 30,
     "left": 300,
@@ -29,7 +26,6 @@
   {
     "id": "redux",
     "name": "Redux",
-    "description": "오오오오ㅗ오옹",
     "img_url": "/reserve/imgs/reduxImg.png",
     "top": 30,
     "left": 430,
@@ -38,7 +34,6 @@
   {
     "id": "node",
     "name": "nodeJS",
-    "description": "aaasdff",
     "img_url": "/reserve/imgs/nodeImg.png",
     "top": 350,
     "left": 30,
@@ -47,7 +42,6 @@
   {
     "id": "sass",
     "name": "Sass",
-    "description": "aaaa",
     "img_url": "/reserve/imgs/sassImg.png",
     "top": 350,
     "left": 320,
@@ -56,7 +50,6 @@
   {
     "id": "styled",
     "name": "Styled-components",
-    "description": "aaaa",
     "img_url": "/reserve/imgs/styledImg.png",
     "top": 250,
     "left": 500,
@@ -65,7 +58,6 @@
   {
     "id": "aws",
     "name": "AWS",
-    "description": "Aaa",
     "img_url": "/reserve/imgs/awsImg.png",
     "top": 410,
     "left": 550,
@@ -74,7 +66,6 @@
   {
     "id": "git",
     "name": "Git",
-    "description": "aasdf",
     "img_url": "/reserve/imgs/gitImg.png",
     "top": 280,
     "left": 200,

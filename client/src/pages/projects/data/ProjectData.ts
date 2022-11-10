@@ -1,7 +1,16 @@
-export const IMAGE_DATA = [
+export const PROJECT_DATA = [
+  {
+    id: "porfolio",
+    name: "Portfolio",
+    links: [
+      "/reserve/imgs/portfolio1.png",
+      "/reserve/imgs/portfolio2.png",
+      "/reserve/imgs/portfolio3.png",
+    ],
+  },
   {
     id: "honey",
-    name: "My Honey Trip",
+    name: "MyHoneyTrip",
     links: [
       "/reserve/imgs/honeytrip1.png",
       "/reserve/imgs/honeytrip2.png",
@@ -19,7 +28,7 @@ export const IMAGE_DATA = [
   },
   {
     id: "turtle",
-    name: "Turtle Home",
+    name: "TurtleHome",
     links: [
       "/reserve/imgs/ggobuk1.png",
       "/reserve/imgs/ggobuk2.png",

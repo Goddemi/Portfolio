@@ -16,11 +16,11 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
     <Container>
       <Declare>const</Declare>
       <Variable> {variable} </Variable>
-      <Bracket>= {variable === "Five_Keywords" ? "[" : "{"} </Bracket>
+      <Bracket>= {variable === "My_Five_Keywords" ? "[" : "{"} </Bracket>
       {content.map(({ keyName, value }) => {
         return (
           <Content>
-            {variable !== "Five_Keywords" ? (
+            {variable !== "My_Five_Keywords" ? (
               <>
                 <Key>&nbsp;&nbsp; {keyName}&nbsp;:&nbsp;</Key>
                 <Value> {value}</Value>
@@ -35,7 +35,7 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
           </Content>
         );
       })}
-      <Bracket>{variable === "Five_Keywords" ? "]" : "}"}</Bracket>
+      <Bracket>{variable === "My_Five_Keywords" ? "]" : "}"}</Bracket>
     </Container>
   );
 };
