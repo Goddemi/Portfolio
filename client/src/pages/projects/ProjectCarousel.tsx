@@ -11,8 +11,6 @@ import Description from "./Description";
 import { PROJECT_DATA } from "./data/ProjectData";
 
 const ProjectCarousel = () => {
-  // 나중에 인덱스가 아닌, id 값에 따라서 백엔드에서 다른 값을 가져올 수 있도록 할 수 있겠다.
-
   const settings = {
     infinite: true,
     speed: 500,

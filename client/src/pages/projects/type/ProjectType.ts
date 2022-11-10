@@ -5,6 +5,6 @@ export default interface ProjectType {
   summary: string;
   mainFunction: string[];
   skills: string[];
-  git: string | JSX.Element | undefined;
-  result: string | JSX.Element | undefined;
+  git: string;
+  result?: string;
 }

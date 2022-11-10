@@ -59,7 +59,7 @@ export const AboutData = [
     content: [
       {
         keyName: "위글",
-        value: "'22.08 ~ 22.09 / 숏폼 영상 커머스 스타트업 인턴 근무'",
+        value: "'22.08 ~ 22.09 / 숏폼 영상 커머스 스타트업 인턴'",
       },
       {
         keyName: "위코드",

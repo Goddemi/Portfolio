@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import ProjectType from "./type/ProjectType";
 
 const Description: React.FC<ProjectType> = ({
@@ -14,23 +13,31 @@ const Description: React.FC<ProjectType> = ({
     <Container>
       <Summary>{summary}</Summary>
       <Box>
-        <span>주오 기능 : </span>
-        <span>{mainFunction}</span>
+        <Key>주요 기능 : </Key>
+        {mainFunction.map((ele: any) => (
+          <div>- {ele}</div>
+        ))}
       </Box>
       <Box>
-        <span>사용된 기술 : </span>
-        <span>{skills}</span>
+        <Key>사용된 기술 : </Key>
+        {skills.map((skill) => {
+          return <Skill>{skill}</Skill>;
+        })}
       </Box>
 
       <Box>
-        <span>Git : </span>
-        <span>{git}</span>
+        <Key>Git : </Key>
+        <a href={git}>{git}</a>
       </Box>
 
-      <Box>
-        <span>결과물</span>
-        <span>{result}</span>
-      </Box>
+      {result ? (
+        <Box>
+          <Key>결과물</Key>
+          <span>{result}</span>
+        </Box>
+      ) : (
+        ""
+      )}
     </Container>
   );
 };
@@ -40,14 +47,29 @@ export default Description;
 const Container = styled.div`
   width: 400px;
   margin-left: 30px;
+  line-height: 25px;
 `;
 
 const Summary = styled.div`
-  background-color: aqua;
   word-wrap: break-word;
-  line-height: 20px;
 `;
 
 const Box = styled.div`
   margin: 10px 0;
+
+  a {
+    color: black;
+  }
+`;
+
+const Key = styled.div`
+  font-weight: bold;
+`;
+const Skill = styled.div`
+  display: inline-block;
+  margin: 2px 3px;
+  padding: 0px 3px;
+  color: whitesmoke;
+  background-color: ${(props) => props.theme.blue};
+  border-radius: 5px;
 `;

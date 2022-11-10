@@ -43,11 +43,11 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
 export default ContentBox;
 
 const Container = styled.div`
-  width: 550px;
-  height: 300px;
+  width: 530px;
+  height: 250px;
   margin: 10px 30px;
   padding: 20px;
-  border: 1px solid gray;
+
   border-radius: ${(props) => props.theme.radius};
   span {
     font-size: 18px;
@@ -58,9 +58,7 @@ const Declare = styled.span`
   color: ${(props) => props.theme.purple};
 `;
 
-const Variable = styled.span`
-  color: white;
-`;
+const Variable = styled.span``;
 
 const Bracket = styled.span`
   color: ${(props) => props.theme.purple};
