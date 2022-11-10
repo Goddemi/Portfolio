@@ -19,22 +19,28 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
     swipe: false,
   };
   return (
-    <Slider {...settings}>
-      {imgLinks.map((imgLink) => {
-        return (
-          <Image
-            src={process.env.PUBLIC_URL + imgLink}
-            width={350}
-            height={400}
-          />
-        );
-      })}
-    </Slider>
+    <Container>
+      <Slider {...settings}>
+        {imgLinks.map((imgLink) => {
+          return (
+            <Image
+              src={process.env.PUBLIC_URL + imgLink}
+              width={350}
+              height={410}
+            />
+          );
+        })}
+      </Slider>
+    </Container>
   );
 };
 
 export default Images;
 //
+
+const Container = styled.div`
+  width: 350px;
+`;
 
 const Image = styled.img`
   border-radius: ${(props) => props.theme.radius};

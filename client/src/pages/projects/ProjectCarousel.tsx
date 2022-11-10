@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Images from "./Images";
+import Description from "./Description";
+
 import { PROJECT_DATA } from "./data/ProjectData";
 
 const ProjectCarousel = () => {
@@ -20,50 +22,28 @@ const ProjectCarousel = () => {
   };
   return (
     <Slider {...settings}>
-      {PROJECT_DATA.map(({ name, links }) => {
-        return (
-          <Project key={name}>
-            <Header>- {name} -</Header>
-            <Date>2022년 11월</Date>
-            <Content>
-              <ImageBox>
+      {PROJECT_DATA.map(
+        ({ name, links, summary, main_function, skills, git, result }, i) => {
+          return (
+            <Project key={name}>
+              <Header>- {name} -</Header>
+              <Content>
                 <Images imgLinks={links} />
-              </ImageBox>
-              <DescriptionBox>
-                <Description>포트폴리오 사이트</Description>
-                <Box>
-                  <span>주오 기능 : </span>
-                  <span></span>
-                </Box>
-                <Box>
-                  <span>사용된 기술 : </span>
-                  <span>Typescript, React, Styled-Components</span>
-                </Box>
-
-                <Box>
-                  <span>인원 : </span>
-                  <span>1명</span>
-                </Box>
-
-                <Box>
-                  <span></span>
-                  <span> 어쩌구 저쩌구</span>
-                </Box>
-                <Box>
-                  <span>Git</span>
-                  <span> github.com/Goddemi/35-2nd-myhoneytrip-frontend</span>
-                </Box>
-                <Box>
-                  <span>시연영상</span>
-                  <span> www.youtube.com/watch?v=Fys1Xh8m_pE</span>
-                </Box>
-
-                <Description>느낀점어ㅣ거다 ~~</Description>
-              </DescriptionBox>
-            </Content>
-          </Project>
-        );
-      })}
+                <Description
+                  summary={summary}
+                  mainFunction={main_function}
+                  skills={skills}
+                  git={git}
+                  result={result}
+                />
+              </Content>
+              <Footer>
+                {i + 1} / {PROJECT_DATA.length}
+              </Footer>
+            </Project>
+          );
+        }
+      )}
     </Slider>
   );
 };
@@ -71,38 +51,22 @@ const ProjectCarousel = () => {
 export default ProjectCarousel;
 
 const Project = styled.div`
-  padding: 40px 60px;
+  padding: 40px 50px 20px 50px;
   color: black;
 `;
 
 const Header = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   font-size: 30px;
   text-align: center;
 `;
 
-const Date = styled(Header)`
-  font-size: 17px;
-  color: gray;
-`;
-
 const Content = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
-const ImageBox = styled.div`
-  width: 350px;
-`;
-
-const DescriptionBox = styled.div`
-  margin-left: 40px;
-`;
-
-const Description = styled.div`
-  line-height: 20px;
-`;
-
-const Box = styled.div`
-  margin: 10px 0;
+const Footer = styled.div`
+  margin-top: 35px;
+  text-align: center;
 `;

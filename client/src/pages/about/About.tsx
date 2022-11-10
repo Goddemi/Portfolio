@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { AboutData } from "../../assets/AboutData";
+import { AboutData } from "./data/AboutData";
 import ContentBox from "./ContentBox";
 
 const About: React.FC = () => {
