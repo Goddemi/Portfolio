@@ -19,6 +19,5 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 20px;
   color: white;
 `;
