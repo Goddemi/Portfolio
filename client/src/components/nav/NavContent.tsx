@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MENU_DATA } from "./MenuData";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
 
 const NavContent = () => {
-  const subMenuOpenKey = MENU_DATA.reduce((acc: any, cur) => {
+  let init: { [key: string]: boolean } = {}; //reduce에서 type
+  const subMenuOpenKey = MENU_DATA.reduce((acc, cur): {} => {
     acc[cur.name] = false;
     return acc;
-  }, {});
+  }, init);
 
   const [isOpen, setIsOpen] = useState(subMenuOpenKey);
 
-  const menuToggle = (name: any) => {
+  const menuToggle = (name: string) => {
     let newOpen = { ...isOpen };
     newOpen[name] = !newOpen[name];
     setIsOpen(newOpen);

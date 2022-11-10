@@ -5,23 +5,20 @@ import NavContent from "./NavContent";
 
 const Nav: React.FC = () => {
   return (
-    <>
-      <NavSpace>
-        <NavHeader>
-          <NavLink to={"/"} className="navLink">
-            Portfolio
-          </NavLink>
-        </NavHeader>
-        <NavContent />
-      </NavSpace>
-    </>
+    <NavSpace>
+      <NavHeader>
+        <NavLink to={"/"} className="navLink">
+          Portfolio
+        </NavLink>
+      </NavHeader>
+      <NavContent />
+    </NavSpace>
   );
 };
 
 export default Nav;
 
 const NavSpace = styled.nav`
-  background-color: ${(props) => props.theme.navy};
   width: 330px;
   height: 100vh;
 

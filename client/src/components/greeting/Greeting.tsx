@@ -26,7 +26,7 @@ const Container = styled.div`
 
 const ProfileImg = styled.img`
   width: 380px;
-  border-radius: 20px;
+  border-radius: ${(props) => props.theme.radius};
 `;
 
 const SayHello = styled.div`
@@ -41,9 +41,11 @@ const SayHello = styled.div`
       color: ${(props) => props.theme.purple};
     }
   }
+
   .blinking {
     animation: blink-effect 1s step-end infinite;
   }
+
   @keyframes blink-effect {
     50% {
       opacity: 0;

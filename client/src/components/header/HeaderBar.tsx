@@ -13,9 +13,7 @@ const HeaderBar: React.FC<Props> = ({ title }) => {
       <NavLink className="navLink" to={"/"}>
         portfolio{" "}
       </NavLink>
-      <div>
-        <BsChevronCompactRight />
-      </div>{" "}
+      <BsChevronCompactRight />
       <span className="navLink">{title}</span>
     </Content>
   );
@@ -31,7 +29,6 @@ const Content = styled.div`
 
   .navLink {
     cursor: pointer;
-    text-decoration-line: none;
 
     &:visited {
       color: gray;
