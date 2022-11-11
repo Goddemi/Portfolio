@@ -16,12 +16,12 @@ const Contact = () => {
 export default Contact;
 
 const Container = styled.div`
+  padding-top: 90px;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
+
   div {
     font-size: 100px;
   }
 `;
-
-const Box = styled.div``;

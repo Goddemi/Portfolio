@@ -22,6 +22,12 @@ const melonLink = (
   </a>
 );
 
+const InstaLink = (
+  <>
+    <a href="https://www.instagram.com/abraxas1225//">InstagramLink</a>
+  </>
+);
+
 export const AboutData = [
   {
     variable: "ME",
@@ -85,7 +91,11 @@ export const AboutData = [
       },
       { keyName: "MBTI", value: "'INTP'" },
       {
-        keyName: "MySongs !",
+        keyName: "Instagram",
+        value: InstaLink,
+      },
+      {
+        keyName: "MySongs!",
         value: melonLink,
       },
     ],

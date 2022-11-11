@@ -53,7 +53,7 @@ export const PROJECT_DATA = [
       "상품 등록 post 통신 구현",
     ],
     skills: ["Typescript", "React", "Styled-components"],
-    git: "",
+    git: "https://github.com/Goddemi/weggle-internship",
     result: "",
   },
   {
@@ -73,7 +73,7 @@ export const PROJECT_DATA = [
       "장바구니 페이지 :  토큰에 따른 이용자별 장바구니 가져오기",
     ],
     skills: ["Javascript", "React", "Sass", "AWS"],
-    git: "",
-    result: "",
+    git: "https://github.com/Goddemi/35-1st-TURTLE-HOME-frontend",
+    result: "http://ourturtlehome.s3-website.ap-northeast-2.amazonaws.com/",
   },
 ];
