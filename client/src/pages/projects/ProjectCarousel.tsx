@@ -23,7 +23,7 @@ const ProjectCarousel = () => {
       {PROJECT_DATA.map(
         ({ name, links, summary, main_function, skills, git, result }, i) => {
           return (
-            <Project key={name}>
+            <Container key={name}>
               <Header>- {name} -</Header>
               <Content>
                 <Images imgLinks={links} />
@@ -35,10 +35,10 @@ const ProjectCarousel = () => {
                   result={result}
                 />
               </Content>
-              <Footer>
+              <Footer className="footer">
                 {i + 1} / {PROJECT_DATA.length}
               </Footer>
-            </Project>
+            </Container>
           );
         }
       )}
@@ -48,9 +48,10 @@ const ProjectCarousel = () => {
 
 export default ProjectCarousel;
 
-const Project = styled.div`
+const Container = styled.div`
   padding: 40px 50px 20px 50px;
   color: black;
+  position: relative;
 `;
 
 const Header = styled.div`
@@ -65,6 +66,7 @@ const Content = styled.div`
 `;
 
 const Footer = styled.div`
-  margin-top: 35px;
-  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 410px;
 `;

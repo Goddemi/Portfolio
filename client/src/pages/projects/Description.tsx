@@ -27,13 +27,13 @@ const Description: React.FC<ProjectType> = ({
 
       <Box>
         <Key>Git : </Key>
-        <a href={git}>{git}</a>
+        <a href={git}>GitLink</a>
       </Box>
 
       {result ? (
         <Box>
-          <Key>결과물</Key>
-          <span>{result}</span>
+          <Key>Result : </Key>
+          <a href={result}>SiteLink</a>
         </Box>
       ) : (
         ""
@@ -45,7 +45,8 @@ const Description: React.FC<ProjectType> = ({
 export default Description;
 
 const Container = styled.div`
-  width: 400px;
+  width: 410px;
+  height: 430px;
   margin-left: 30px;
   line-height: 25px;
 `;
@@ -62,7 +63,7 @@ const Box = styled.div`
   }
 `;
 
-const Key = styled.div`
+const Key = styled.span`
   font-weight: bold;
 `;
 const Skill = styled.div`
