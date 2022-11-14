@@ -5,6 +5,8 @@ import { PROJECTS_DATA_URL } from "../../config";
 import ProjectCarousel from "./ProjectCarousel";
 
 const Projects = () => {
+  axios.defaults.withCredentials = true;
+
   const [projectData, setProjectData] = useState();
   const [isLoading, setLoading] = useState(true);
 
