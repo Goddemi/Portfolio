@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { PUBLIC_URL } from "../../config";
 import { SkillDataType } from "./type/SkillType";
 
 const Images = ({ skillData }: { skillData: SkillDataType | undefined }) => {
   return (
     <Container>
-      <Mac src={process.env.PUBLIC_URL + "/reserve/imgs/macImg.png"} />
+      <Mac src={PUBLIC_URL + "/reserve/imgs/macImg.png"} />
       {skillData?.map(({ img_url, top, left, width }, i) => {
         return (
           <Sticker
             key={i}
-            src={process.env.PUBLIC_URL + img_url}
+            src={PUBLIC_URL + img_url}
             style={{ width, top, left }}
           />
         );
