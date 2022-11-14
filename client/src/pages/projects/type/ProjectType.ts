@@ -3,8 +3,10 @@ export default interface ProjectType {
   name?: string;
   links?: string[];
   summary: string;
-  mainFunction: string[];
+  main_function: string[];
   skills: string[];
   git: string;
   result?: string;
 }
+
+export type ProjectDataType = ProjectType[];

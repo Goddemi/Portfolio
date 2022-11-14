@@ -4,7 +4,7 @@ import ProjectType from "./type/ProjectType";
 
 const Description: React.FC<ProjectType> = ({
   summary,
-  mainFunction,
+  main_function,
   skills,
   git,
   result,
@@ -14,7 +14,7 @@ const Description: React.FC<ProjectType> = ({
       <Summary>{summary}</Summary>
       <Box>
         <Key>주요 기능 : </Key>
-        {mainFunction.map((ele: any) => (
+        {main_function.map((ele) => (
           <div>- {ele}</div>
         ))}
       </Box>

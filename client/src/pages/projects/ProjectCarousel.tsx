@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Images from "./Images";
 import Description from "./Description";
 
-import { PROJECT_DATA } from "./data/ProjectData";
+import ProjectType from "./type/ProjectType";
 
-const ProjectCarousel = () => {
+const ProjectCarousel = ({ data }: { data: ProjectType[] | undefined }) => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -20,7 +20,7 @@ const ProjectCarousel = () => {
   };
   return (
     <Slider {...settings}>
-      {PROJECT_DATA.map(
+      {data?.map(
         ({ name, links, summary, main_function, skills, git, result }, i) => {
           return (
             <Container key={name}>
@@ -29,14 +29,14 @@ const ProjectCarousel = () => {
                 <Images imgLinks={links} />
                 <Description
                   summary={summary}
-                  mainFunction={main_function}
+                  main_function={main_function}
                   skills={skills}
                   git={git}
                   result={result}
                 />
               </Content>
               <Footer className="footer">
-                {i + 1} / {PROJECT_DATA.length}
+                {i + 1} / {data?.length}
               </Footer>
             </Container>
           );

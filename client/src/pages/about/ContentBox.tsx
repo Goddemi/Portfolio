@@ -19,20 +19,20 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
       <Bracket>= {variable === "My_Five_Keywords" ? "[" : "{"} </Bracket>
       {content.map(({ keyName, value }) => {
         return (
-          <Content>
+          <>
             {variable !== "My_Five_Keywords" ? (
-              <>
+              <Content>
                 <Key>&nbsp;&nbsp; {keyName}&nbsp;:&nbsp;</Key>
                 <Value> {value}</Value>
                 <Key>,</Key>
-              </>
+              </Content>
             ) : (
-              <>
+              <Content>
                 <Value> &nbsp;&nbsp; {value}</Value>
                 <Key>,</Key>
-              </>
+              </Content>
             )}
-          </Content>
+          </>
         );
       })}
       <Bracket>{variable === "My_Five_Keywords" ? "]" : "}"}</Bracket>

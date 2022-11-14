@@ -3,7 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 import Images from "./Images";
 import { SkillDataType } from "./type/SkillType";
-import { SKILL_URL } from "../../config";
+import { SKILLS_DATA_URL } from "../../config";
 
 const Skills = () => {
   const [skillData, setSkillData] = useState<SkillDataType | undefined>();
@@ -11,7 +11,7 @@ const Skills = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios(SKILL_URL);
+      const response = await axios(SKILLS_DATA_URL);
       const data = await response.data;
       setSkillData(data);
       setLoading(false);

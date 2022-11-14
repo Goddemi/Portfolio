@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 interface Props {
-  imgLinks: string[];
+  imgLinks: string[] | undefined;
 }
 
 const Images: React.FC<Props> = ({ imgLinks }) => {
@@ -21,7 +21,7 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
   return (
     <Container>
       <Slider {...settings}>
-        {imgLinks.map((imgLink) => {
+        {imgLinks?.map((imgLink) => {
           return (
             <Image
               src={process.env.PUBLIC_URL + imgLink}

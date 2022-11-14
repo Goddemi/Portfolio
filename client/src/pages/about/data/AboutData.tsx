@@ -36,7 +36,7 @@ export const AboutData = [
 
       {
         keyName: "기술",
-        value: "[ 'Js', 'Ts', 'React', 'Redux', 'Nodejs' ]",
+        value: "[ 'Js', 'Ts', 'React', 'Redux', ]",
       },
       { keyName: "Blog", value: blogLink },
       { keyName: "Github", value: gitHubLink },

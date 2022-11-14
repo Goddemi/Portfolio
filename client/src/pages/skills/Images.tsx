@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { SkillType } from "./type/SkillType";
-// import { SkillDataType } from "./type/SkillType";
+import { SkillDataType } from "./type/SkillType";
 
-const Images: React.FC<any> = ({ skillData }) => {
+const Images = ({ skillData }: { skillData: SkillDataType | undefined }) => {
   return (
     <Container>
       <Mac src={process.env.PUBLIC_URL + "/reserve/imgs/macImg.png"} />
-      {skillData.map((ele: SkillType, i: number) => {
-        const { img_url, top, left, width } = ele;
+      {skillData?.map(({ img_url, top, left, width }, i) => {
         return (
           <Sticker
             key={i}
