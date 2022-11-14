@@ -1,7 +1,7 @@
 export const PROJECTS_DATA_URL =
-  "http://localhost:3000/reserve/data/PROJECTS_DATA.json";
+  "https://myportfolio3039.s3.ap-northeast-2.amazonaws.com/reserve/data/PROJECTS_DATA.json";
 export const SKILLS_DATA_URL =
-  "http://localhost:3000/reserve/data/SKILLS_DATA.json";
+  "https://myportfolio3039.s3.ap-northeast-2.amazonaws.com/reserve/data/SKILLS_DATA.json";
 export const PUBLIC_URL =
   "https://myportfolio3039.s3.ap-northeast-2.amazonaws.com/";
 
