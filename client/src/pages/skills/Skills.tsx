@@ -6,8 +6,6 @@ import { SkillDataType } from "./type/SkillType";
 import { SKILLS_DATA_URL } from "../../config";
 
 const Skills = () => {
-  axios.defaults.withCredentials = true;
-
   const [skillData, setSkillData] = useState<SkillDataType | undefined>();
   const [isLoading, setLoading] = useState(true);
 

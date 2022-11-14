@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy" : "aws s3 sync ./build s3://myportfolio3039 --profile=goddemi"
+    "deploy": "aws s3 sync ./build s3://myportfolio3039 --profile=goddemi"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +52,6 @@
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.10"
-  }
+  },
+  "proxy": "https://myportfolio3039.s3.ap-northeast-2.amazonaws.com"
 }
