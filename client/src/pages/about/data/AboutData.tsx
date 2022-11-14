@@ -36,7 +36,7 @@ export const AboutData = [
 
       {
         keyName: "기술",
-        value: "[ 'Js', 'Ts', 'React', 'Redux', ]",
+        value: "[ 'Js', 'Ts', 'React', 'Redux' ]",
       },
       { keyName: "Blog", value: blogLink },
       { keyName: "Github", value: gitHubLink },
@@ -45,9 +45,9 @@ export const AboutData = [
   {
     variable: "My_Five_Keywords",
     content: [
-      { value: "'성실함과 꾸준함" },
+      { value: "'성실하고 꾸준함" },
       {
-        value: "'새로운 것을 배울때의 즐거움'",
+        value: "'새로운 것 배우는 것을 즐김'",
       },
       {
         value: "'긍정적인 사고'",
