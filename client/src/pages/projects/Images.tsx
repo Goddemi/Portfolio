@@ -23,7 +23,14 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
     <Container>
       <Slider {...settings}>
         {imgLinks?.map((imgLink) => {
-          return <Image src={PUBLIC_URL + imgLink} width={350} height={410} />;
+          return (
+            <Image
+              crossOrigin="anonymous"
+              src={PUBLIC_URL + imgLink}
+              width={350}
+              height={410}
+            />
+          );
         })}
       </Slider>
     </Container>
