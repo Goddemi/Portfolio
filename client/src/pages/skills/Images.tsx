@@ -8,13 +8,7 @@ const Images = ({ skillData }: { skillData: SkillDataType | undefined }) => {
     <Container>
       <Mac src={PUBLIC_URL + "/reserve/imgs/macImg.png"} />
       {skillData?.map(({ img_url, top, left, width }, i) => {
-        return (
-          <Sticker
-            key={i}
-            src={PUBLIC_URL + img_url}
-            style={{ width, top, left }}
-          />
-        );
+        return <Sticker key={i} src={img_url} style={{ width, top, left }} />;
       })}
     </Container>
   );
