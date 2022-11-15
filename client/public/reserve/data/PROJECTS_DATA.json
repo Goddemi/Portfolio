@@ -15,7 +15,8 @@
       "기존 데이터의 변형을 통해 효율적인 nav-bar 토글 구현"
     ],
     "skills": ["Typescript", "React", "Styled-components"],
-    "git": "https://github.com/Goddemi/portfolio"
+    "git": "https://github.com/Goddemi/portfolio",
+    "result": "http://portfolio0124.s3-website.ap-northeast-2.amazonaws.com"
   },
   {
     "id": "honey",
@@ -30,7 +31,7 @@
       "항공패턴, 날짜, 목적지, 인원, 유저 선택에 따른 state값 생성",
       "Get통신 쿼리 파라미터를 통한 검색",
       "local storage를 활용한 최근 검색 내역",
-      "추천상품 mapping 및 각 엘리먼트 클릭 시 추천정보에 맞는 검색진행"
+      "추천상품 mapping 및 요소 클릭 시 정보에 맞는 검색진행"
     ],
     "skills": ["Javascript", "React", "Styled-components", "AWS"],
     "git": "https://github.com/Goddemi/35-2nd-myhoneytrip-frontend",
