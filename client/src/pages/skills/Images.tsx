@@ -6,7 +6,7 @@ import { SkillDataType } from "./type/SkillType";
 const Images = ({ skillData }: { skillData: SkillDataType | undefined }) => {
   return (
     <Container>
-      <Mac crossOrigin="anonymous" src={"/reserve/imgs/macImg.png"} />
+      <Mac crossOrigin="anonymous" src="/reserve/imgs/macImg.png" />
       {skillData?.map(({ img_url, top, left, width }, i) => {
         return (
           <Sticker

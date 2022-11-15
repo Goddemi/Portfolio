@@ -32,7 +32,7 @@ export const AboutData = [
   {
     variable: "ME",
     content: [
-      { keyName: "이름", value: "'이강철'" },
+      { keyName: "이름", value: "'왕강철'" },
 
       {
         keyName: "기술",
