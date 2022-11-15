@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { PUBLIC_URL } from "../../config";
+// import { PUBLIC_URL } from "../../config";
 
 interface Props {
   imgLinks: string[] | undefined;
@@ -26,7 +26,7 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
           return (
             <Image
               crossOrigin="anonymous"
-              src={PUBLIC_URL + imgLink}
+              src={imgLink}
               width={350}
               height={410}
             />
