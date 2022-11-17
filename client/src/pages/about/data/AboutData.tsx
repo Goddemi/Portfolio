@@ -36,7 +36,7 @@ export const AboutData = [
 
       {
         keyName: "기술",
-        value: "[ 'Js', 'Ts', 'React', 'Redux' ]",
+        value: "[ 'Js', 'Ts', 'React', 'Redux', 'NodeJs' ]",
       },
       { keyName: "Blog", value: blogLink },
       { keyName: "Github", value: gitHubLink },
@@ -53,10 +53,10 @@ export const AboutData = [
         value: "'긍정적인 사고'",
       },
       {
-        value: "'문제를 어떻게든 해결함'",
+        value: "'문제를 끈기 있게 해결'",
       },
       {
-        value: "'핵심을 파악하는 커뮤니케이션'",
+        value: "'커뮤니케이션의 핵심을 파악'",
       },
     ],
   },
@@ -65,16 +65,16 @@ export const AboutData = [
     content: [
       {
         keyName: "위글",
-        value: "'22.08 ~ 22.09 / 숏폼 영상 커머스 스타트업 인턴'",
+        value: "'숏폼 영상 커머스 스타트업 인턴 / 22.08 ~ 22.09'",
       },
       {
         keyName: "위코드",
-        value: "'22.06 ~ 22.09 / 위코드 프론트엔드 부트캠프 수료'",
+        value: "'위코드 프론트엔드 부트캠프 수료 / 22.06 ~ 22.09'",
       },
-      { keyName: "하나투어", value: "'18.02 ~ 22.05 / 대리점 영업관리직무'" },
+      { keyName: "하나투어", value: "'대리점 영업관리직무 / 18.02 ~ 22.05'" },
       {
         keyName: "숭실대학교",
-        value: "'10.03 ~ 17.02 / 글로벌 통상학과 학사 졸업'",
+        value: "'글로벌 통상학과 학사 졸업 / 10.03 ~ 17.02'",
       },
     ],
   },
