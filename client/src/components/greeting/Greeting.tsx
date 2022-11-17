@@ -6,7 +6,7 @@ const Greeting = () => {
     <Container>
       <ProfileImg src={process.env.PUBLIC_URL + "/reserve/imgs/profile.jpeg"} />
       <SayHello>
-        <MyName>프론트엔드 개발자 이강철 입니다.</MyName>
+        <MyName>독서하는 프론트엔드 개발자 이강철 입니다.</MyName>
         <KeySentence>
           <span className="colored">직관적인 UI/UX</span>와{" "}
           <span className="colored">클린코드</span>를 추구합니다.
