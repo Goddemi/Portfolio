@@ -8,7 +8,7 @@ const Projects = () => {
     isLoading,
     error,
     data: projectData,
-  } = useQuery(["products"], getProjectData);
+  } = useQuery(["products"], getProjectData, { staleTime: 1000 * 60 * 5 });
 
   if (isLoading) {
     return <div>Loading.. </div>;
