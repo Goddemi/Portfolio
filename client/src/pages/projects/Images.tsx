@@ -25,6 +25,7 @@ const Images: React.FC<Props> = ({ imgLinks }) => {
         {imgLinks?.map((imgLink) => {
           return (
             <Image
+              key={imgLink}
               crossOrigin="anonymous"
               src={imgLink}
               width={350}

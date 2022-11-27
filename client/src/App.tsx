@@ -1,15 +1,12 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import AppProvider from "./providers/AppProvider";
 import AppRoutes from "./routes/AppRoutes";
-import GlobalStyle from "./styles/GlobalStyle";
-import theme from "./styles/theme";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+    <AppProvider>
       <AppRoutes />
-    </ThemeProvider>
+    </AppProvider>
   );
 }
 

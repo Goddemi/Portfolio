@@ -10,11 +10,11 @@
     "summary": "개인 포트폴리오 사이트입니다. 단순한 기능들로 이루어져 있지만 세심하게 만들어 보았습니다. 클린코드를 우선시하며 코드를 작성했습니다. 타입스크립트의 활용과 컴포넌트를 작게 분리하는 것에 대해 자신감을 가지게 되었습니다. ",
     "main_function": [
       "map함수를 적극적으로 사용하여 효율적으로 컴포넌트 생성",
-      "useEffect와 async를 활용한 페이지 별 data fetch",
+      "React-Query / useEffect와 async를 활용한 페이지 별 data fetch",
       "캐러셀안의 캐러셀 구조를 통한 효과적인 정보 전달",
       "기존 데이터의 변형을 통해 원하는 데이터 형태 구현. 효율적으로 nav-bar 토글 생성"
     ],
-    "skills": ["Typescript", "React", "Styled-components"],
+    "skills": ["Typescript", "React", "React-Query", "Styled-components"],
     "git": "https://github.com/Goddemi/portfolio",
     "result": "http://portfolio0124.s3-website.ap-northeast-2.amazonaws.com"
   },

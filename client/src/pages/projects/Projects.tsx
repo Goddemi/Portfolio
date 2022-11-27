@@ -1,30 +1,25 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import styled from "styled-components";
-import { PROJECTS_DATA_URL } from "../../config";
+import { useQuery } from "@tanstack/react-query";
+import getProjectData from "./api/getProjectData";
 import ProjectCarousel from "./ProjectCarousel";
+import styled from "styled-components";
 
 const Projects = () => {
-  const [projectData, setProjectData] = useState();
-  const [isLoading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios(PROJECTS_DATA_URL);
-      const data = response.data;
-      setProjectData(data);
-      setLoading(false);
-    };
-    fetchData().catch(console.error);
-  }, []);
+  const {
+    isLoading,
+    error,
+    data: projectData,
+  } = useQuery(["products"], getProjectData);
 
   if (isLoading) {
     return <div>Loading.. </div>;
   }
 
+  if (error) console.log(error);
+
   return (
     <Container>
-      <ProjectCarousel data={projectData} />
+      {" "}
+      <ProjectCarousel data={projectData} />{" "}
     </Container>
   );
 };

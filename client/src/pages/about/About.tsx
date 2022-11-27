@@ -6,8 +6,8 @@ import ContentBox from "./ContentBox";
 const About: React.FC = () => {
   return (
     <Container>
-      {AboutData.map(({ variable, content }) => {
-        return <ContentBox variable={variable} content={content} />;
+      {AboutData.map(({ variable, content }, i) => {
+        return <ContentBox key={i} variable={variable} content={content} />;
       })}
     </Container>
   );

@@ -14,14 +14,14 @@ const Description: React.FC<ProjectType> = ({
       <Summary>{summary}</Summary>
       <Box>
         <Key>주요 기능 : </Key>
-        {main_function.map((ele) => (
-          <div>- {ele}</div>
+        {main_function.map((ele, i) => (
+          <div key={i}>- {ele}</div>
         ))}
       </Box>
       <Box>
         <Key>사용된 기술 : </Key>
-        {skills.map((skill) => {
-          return <Skill>{skill}</Skill>;
+        {skills.map((skill, i) => {
+          return <Skill key={i}>{skill}</Skill>;
         })}
       </Box>
 
