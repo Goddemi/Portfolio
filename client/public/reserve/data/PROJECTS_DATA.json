@@ -7,12 +7,9 @@
       "/reserve/imgs/portfolio2.png",
       "/reserve/imgs/portfolio3.png"
     ],
-    "summary": "개인 포트폴리오 사이트입니다. 단순한 기능들로 이루어져 있지만 세심하게 만들어 보았습니다. 클린코드를 우선시하며 코드를 작성했습니다. 타입스크립트의 활용과 컴포넌트를 작게 분리하는 것에 대해 자신감을 가지게 되었습니다. ",
+    "summary": "개인 포트폴리오 사이트 입니다. 단순한 기능들로 이루어져 있지만 세심하게 만들어 보았습니다. 클린코드를 고려하여 코드를 작성했습니다. 새로 배운 것들을 기존의 코드에 적용해 보았고, 발전해 나가는 모습을 보며 즐겁게 만들었습니다. 타입스크립트의 활용과 컴포넌트 분리에 대하여 자신감을 가지게 되었습니다.  ",
     "main_function": [
-      "map함수를 적극적으로 사용하여 효율적으로 컴포넌트 생성",
-      "React-Query / useEffect와 async를 활용한 페이지 별 data fetch",
-      "캐러셀안의 캐러셀 구조를 통한 효과적인 정보 전달",
-      "기존 데이터의 변형을 통해 원하는 데이터 형태 구현. 효율적으로 nav-bar 토글 생성"
+      "react-query / useEffect와 async를 활용한 페이지 별 data fetch"
     ],
     "skills": ["Typescript", "React", "React-Query", "Styled-components"],
     "git": "https://github.com/Goddemi/portfolio",
@@ -26,12 +23,11 @@
       "/reserve/imgs/honeytrip2.png",
       "/reserve/imgs/honeytrip4.png"
     ],
-    "summary": "항공권 예약 사이트. 항공권 검색 메인 페이지 담당. 페이지간의 상태 값 전달과 Prop drilling 문제에서 어려움을 겪으며 Redux의 필요성을 느꼈습니다. PM으로 참여하여 페이지간 연결성, 데이터가 어떤 흐름으로 움직여야 하는지 큰 그림을 가지고 접근하는 법을 배웠습니다. 배워야 할 것들과 배우고 싶은 것들을 시행착오를 통해, 필요에 의해 얻어 갈 수 있어서 좋았습니다.",
+    "summary": "항공권 예약 사이트. 메인 페이지 담당. PM으로 참여하여 페이지간 연결성, 데이터가 어떤 흐름으로 움직여야 하는지 큰 그림을 가지고 접근하는 법을 배웠습니다. 페이지간의 상태 값 전달과 Prop drilling 문제에서 어려움을 겪으며 상태관리 라이브러리의 필요성을 느꼈습니다. 배워야 할 것들과 배우고 싶은 것들을 시행착오를 통해, 필요에 의해 얻어 갈 수 있어서 좋았습니다.",
     "main_function": [
       "항공패턴, 날짜, 목적지, 인원, 유저 선택에 따른 state값 생성",
       "Get통신 쿼리 파라미터를 통한 검색",
-      "local storage를 활용한 최근 검색 내역",
-      "추천상품 mapping 및 요소 클릭 시 정보에 맞는 검색진행"
+      "local storage를 활용한 최근 검색 내역"
     ],
     "skills": ["Javascript", "React", "Styled-components", "AWS"],
     "git": "https://github.com/Goddemi/35-2nd-myhoneytrip-frontend",
@@ -45,7 +41,7 @@
       "/reserve/imgs/weggle2.png",
       "/reserve/imgs/weggle3.png"
     ],
-    "summary": "판매자를 위한 B2B 상품 등록 페이지 구현 담당.  기존의 제이쿼리로 작성된 페이지를 주어진 Figma에 맞게 리액트 버전으로 수정하는 작업이었습니다. 컴포넌트 단위로 코드를 분리하고 가독성 좋게 코드를 작성 하였습니다. mui 라이브러리를 사용하였는데 세부적인 css 수정에서 문제를 겪었습니다. 라이브러리가 꼭 편리한 것은 아니라는 것을 느꼈습니다.",
+    "summary": "판매자를 위한 B2B 상품 등록 페이지 구현 담당. 기존의 제이쿼리로 작성된 페이지를 주어진 Figma에 맞게 리액트 버전으로 수정하는 작업이었습니다. UI, 업로더 및 에디터 구현에 라이브러리들을 사용하였는데 커스터마이징에 어려움을 겪었습니다. 라이브러리가 꼭 편리한 것은 아니라는 것을 느꼈습니다. ",
     "main_function": [
       "image & video 업로드 기능 및  quill Editor를 활용한 상품 상세 정보 입력 기능 구현",
       "상품 등록 post 통신 구현"

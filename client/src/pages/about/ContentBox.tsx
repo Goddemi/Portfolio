@@ -21,13 +21,13 @@ const ContentBox: React.FC<Props> = ({ variable, content }) => {
         return (
           <>
             {variable !== "My_Five_Keywords" ? (
-              <Content>
+              <Content key={keyName}>
                 <Key>&nbsp;&nbsp; {keyName}&nbsp;:&nbsp;</Key>
                 <Value> {value}</Value>
                 <Key>,</Key>
               </Content>
             ) : (
-              <Content>
+              <Content key={keyName}>
                 <Value> &nbsp;&nbsp; {value}</Value>
                 <Key>,</Key>
               </Content>

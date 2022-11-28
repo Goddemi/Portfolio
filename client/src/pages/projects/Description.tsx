@@ -48,6 +48,7 @@ const Container = styled.div`
   width: 410px;
   height: 430px;
   margin-left: 30px;
+  padding-top: 10px;
   line-height: 25px;
 `;
 
