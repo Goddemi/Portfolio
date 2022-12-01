@@ -3,8 +3,8 @@ export default interface ProjectType {
   name?: string;
   links?: string[];
   summary: string;
-  main_function: string[];
-  skills: string[];
+  main_function: (string | number)[];
+  skills: (string | number)[];
   git: string;
   result?: string;
 }
