@@ -1,4 +1,4 @@
-interface MenuData {
+export interface MenuData {
   name: string;
   to: string;
   details?: string[];

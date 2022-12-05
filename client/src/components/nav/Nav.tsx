@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import NavContent from "./NavContent";
+import { MENU_DATA } from "./data/MenuData";
 
 const Nav: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Nav: React.FC = () => {
           Portfolio
         </NavLink>
       </NavHeader>
-      <NavContent />
+      <NavContent menuData={MENU_DATA} />
     </NavSpace>
   );
 };

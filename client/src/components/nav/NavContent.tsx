@@ -1,12 +1,12 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { MenuData } from "./data/MenuData";
 import styled from "styled-components";
-import { MENU_DATA } from "./MenuData";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
 
-const NavContent = () => {
+const NavContent = ({ menuData }: { menuData: MenuData[] }) => {
   let init: { [key: string]: boolean } = {}; //reduce에서 type
-  const subMenuOpenKey = MENU_DATA.reduce((acc, cur): {} => {
+  const subMenuOpenKey = menuData.reduce((acc, cur): {} => {
     acc[cur.name] = false;
     return acc;
   }, init);
@@ -21,7 +21,7 @@ const NavContent = () => {
 
   return (
     <>
-      {MENU_DATA.map(({ name, to, details }) => {
+      {menuData.map(({ name, to, details }) => {
         return (
           <NavMenu
             key={name}

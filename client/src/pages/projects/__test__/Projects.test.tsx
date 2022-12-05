@@ -15,7 +15,7 @@ describe("<Description />", () => {
       />
     );
 
-    const textElement = screen.getByText("Git :");
-    expect(textElement).toBeInTheDocument();
+    const summaryText = screen.getByText(summary);
+    expect(summaryText).toBeInTheDocument();
   });
 });
