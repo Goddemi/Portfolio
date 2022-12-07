@@ -1,7 +1,8 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { MemoryRouter, Route } from "react-router-dom";
+import { withRouter } from "../../../test/utils";
 import Nav from "../Nav";
 import NavContent from "../NavContent";
 
@@ -15,23 +16,23 @@ test("nav page setup", () => {
   expect(screen.getByText("Portfolio")).toBeInTheDocument();
 });
 
-test("navlink to navigate", async () => {
+test("click navlink to navigate", () => {
   const NewLocation = () => {
     return <div>welcome</div>;
   };
   const menuData = [{ name: "loca", to: "/loca", description: "test" }];
 
   render(
-    <MemoryRouter>
-      <Routes>
+    withRouter(
+      <>
         <Route path="/" element={<NavContent menuData={menuData} />} />
         <Route path="/loca" element={<NewLocation />} />
-      </Routes>
-    </MemoryRouter>
+      </>
+    )
   );
 
   expect(screen.getByText("loca")).toBeInTheDocument();
 
-  await userEvent.click(screen.getByText("loca"));
+  userEvent.click(screen.getByText("loca"));
   expect(screen.getByText("welcome")).toBeInTheDocument();
 });
