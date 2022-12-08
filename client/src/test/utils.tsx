@@ -1,8 +1,8 @@
 import { MemoryRouter, Routes } from "react-router-dom";
 
-export const withRouter = (routes: any) => {
+export const withRouter = (routes: any, initialEntry = "/") => {
   return (
-    <MemoryRouter>
+    <MemoryRouter initialEntries={[initialEntry]}>
       <Routes>{routes}</Routes>
     </MemoryRouter>
   );

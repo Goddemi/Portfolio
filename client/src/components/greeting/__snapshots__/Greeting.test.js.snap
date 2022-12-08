@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeting renders correctly 1`] = `
+<div
+  className="sc-bcXHqe eOIHv"
+>
+  <img
+    className="sc-gswNZR fTpcmO"
+    src="/reserve/imgs/profile.jpeg"
+  />
+  <div
+    className="sc-dkrFOg kWFoiU"
+  >
+    <span
+      className="sc-hLBbgP hxOekX"
+    >
+      침착한 프론트엔드 개발자 이강철 입니다.
+    </span>
+    <span
+      className="sc-eDvSVe SxZcT"
+    >
+      <span
+        className="colored"
+      >
+        직관적인 것
+      </span>
+      . 그리고
+       
+      <span
+        className="colored"
+      >
+        클린코드
+      </span>
+      를 추구합니다.
+      <span
+        className="blinking"
+      >
+        |
+      </span>
+    </span>
+  </div>
+</div>
+`;
