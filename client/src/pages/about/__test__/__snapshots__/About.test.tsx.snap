@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page About Contents render correctly 1`] = `
+<div
+  className="sc-bcXHqe wPqGi"
+>
+  <span
+    className="sc-gswNZR gRfICY"
+  >
+    const
+  </span>
+  <span
+    className="sc-dkrFOg"
+  >
+     
+    test
+     
+  </span>
+  <span
+    className="sc-hLBbgP cRWFli"
+  >
+    = 
+    {
+     
+  </span>
+  <div
+    className="sc-eDvSVe fpQGor"
+  >
+    <span
+      className="sc-jSUZER fkfKUW"
+    >
+         
+      이름
+       : 
+    </span>
+    <span
+      className="sc-gKPRtg leLxhg"
+    >
+       
+      test
+    </span>
+    <span
+      className="sc-jSUZER fkfKUW"
+    >
+      ,
+    </span>
+  </div>
+  <span
+    className="sc-hLBbgP cRWFli"
+  >
+    }
+  </span>
+</div>
+`;

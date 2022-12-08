@@ -2,9 +2,9 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Route } from "react-router-dom";
-import { withRouter } from "../../../test/utils";
-import Nav from "../Nav";
-import NavContent from "../NavContent";
+import { withRouter } from "../../test/utils";
+import Nav from "./Nav";
+import NavContent from "./NavContent";
 
 test("nav page setup", () => {
   render(
