@@ -27,7 +27,7 @@ describe("Header", () => {
       withRouter(
         <>
           <Route path="/" element={<div>hi</div>} />{" "}
-          <Route path="/bar" element={<HeaderBar />} />
+          <Route path="/bar" element={<HeaderBar title={"title"} />} />
         </>,
         "/bar"
       )

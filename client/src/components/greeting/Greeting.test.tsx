@@ -1,5 +1,5 @@
-import Greeting from "./Greeting";
 import renderer from "react-test-renderer";
+import Greeting from "./Greeting";
 
 describe("Greeting", () => {
   test("renders correctly", () => {
