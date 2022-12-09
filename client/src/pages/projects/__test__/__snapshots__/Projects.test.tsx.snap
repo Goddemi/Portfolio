@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Description /> project page renders correctly 1`] = `
+<div
+  className="sc-bcXHqe gcGRGz"
+>
+  <div
+    className="sc-gswNZR bHGOZB"
+  >
+    xup=+Tkz/;
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      주요 기능 : 
+    </span>
+    <div>
+      - 
+      -hz@ftztkk
+    </div>
+    <div>
+      - 
+      99634
+    </div>
+    <div>
+      - 
+      24798
+    </div>
+    <div>
+      - 
+      ^\`gp7qI@*0
+    </div>
+    <div>
+      - 
+      "a^imbf%NG
+    </div>
+    <div>
+      - 
+      Cv6k7F_ipO
+    </div>
+    <div>
+      - 
+      65644
+    </div>
+    <div>
+      - 
+      7Xez;FP6{k
+    </div>
+    <div>
+      - 
+      6M&gt;_HP]YDT
+    </div>
+    <div>
+      - 
+      81693
+    </div>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      사용된 기술 : 
+    </span>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      86468
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      48058
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      CPtaT=OG:;
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      85352
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      6)qXD("Pz"
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      MyWd?16*}p
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      fH(6hP;2T\`
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      0eqwMT5.x:
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      7#BB%jDBy\\
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      sP:N.P%kS;
+    </div>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      Git : 
+    </span>
+    <a
+      href="dense-nobody.name"
+    >
+      GitLink
+    </a>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      Result : 
+    </span>
+    <a
+      href="zesty-calendar.name"
+    >
+      SiteLink
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Project Page <Description /> project page renders correctly 1`] = `
+<div
+  className="sc-bcXHqe gcGRGz"
+>
+  <div
+    className="sc-gswNZR bHGOZB"
+  >
+    d\\iIl&!rs#
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      주요 기능 : 
+    </span>
+    <div>
+      - 
+      98390
+    </div>
+    <div>
+      - 
+      S#Ln65ZZv4
+    </div>
+    <div>
+      - 
+      62865
+    </div>
+    <div>
+      - 
+      41975
+    </div>
+    <div>
+      - 
+      12505
+    </div>
+    <div>
+      - 
+      ^iQ1bd:BX:
+    </div>
+    <div>
+      - 
+      '89,M-2pbd
+    </div>
+    <div>
+      - 
+      47023
+    </div>
+    <div>
+      - 
+      48324
+    </div>
+    <div>
+      - 
+      \\)I)Q|Oz:t
+    </div>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      사용된 기술 : 
+    </span>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      |;e'KQG^:n
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      89326
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      RP@5_&lt;k9'0
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      68284
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      82180
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      8027
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      k9#'&lt;()9Hx
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      87654
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      *XNhVCLJvK
+    </div>
+    <div
+      className="sc-eDvSVe feYcqJ"
+    >
+      32980
+    </div>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      Git : 
+    </span>
+    <a
+      href="taut-pitcher.info"
+    >
+      GitLink
+    </a>
+  </div>
+  <div
+    className="sc-dkrFOg dyrSQj"
+  >
+    <span
+      className="sc-hLBbgP fHywhL"
+    >
+      Result : 
+    </span>
+    <a
+      href="twin-bargain.biz"
+    >
+      SiteLink
+    </a>
+  </div>
+</div>
+`;

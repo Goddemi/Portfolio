@@ -1,20 +1,24 @@
 import { useQuery } from "@tanstack/react-query";
-import getProjectData from "./api/getProjectData";
 import ProjectCarousel from "./ProjectCarousel";
 import styled from "styled-components";
+import fetchedProjectData from "./api/getProjectData";
 
 const Projects = () => {
   const {
     isLoading,
     error,
     data: projectData,
-  } = useQuery(["products"], getProjectData, { staleTime: 1000 * 60 * 5 });
+  } = useQuery(["products"], () => fetchedProjectData, {
+    staleTime: 1000 * 60 * 5,
+  });
 
   if (isLoading) {
     return <div>Loading.. </div>;
   }
 
-  if (error) console.log(error);
+  if (error) {
+    return <div>something is wrong</div>;
+  }
 
   return (
     <Container>
