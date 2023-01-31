@@ -1,5 +1,27 @@
 [
   {
+    "id": "youneedverse",
+    "name": "Youneedverse",
+    "links": [
+      "/reserve/imgs/youneedverse1.png",
+      "/reserve/imgs/youneedverse2.png",
+      "/reserve/imgs/youneedverse3.png",
+      "/reserve/imgs/youneedverse4.png"
+    ],
+    "summary": "개인 프로젝트. 상품, 인증/인가, 장바구니로 구성된 쇼핑몰.",
+    "main_function": [
+      "상품 페이지 데이터 SSG를 통해 사전 생성.",
+      "useQuery를 통한 동일 데이터 통신 효율화, 초기값은 SSG를 통해 빠르게 나타날 수 있게 함.",
+      "상품 데이터 및 인증/인가 통신 시, 성공 실패 여부에 따른 에러 핸들링.",
+      "로그인 모달 창 및 로그인 상태를 Redux를 통해 전역 상태 구성.",
+      "API route통한 백엔드 구성"
+    ],
+    "skills": ["Next.js", "React", "Redux", "React-Query"],
+    "retrospective": "https://goddemi.tistory.com/119",
+    "git": "https://github.com/Goddemi/next-blog",
+    "result": "https://next-blog-3ffp.vercel.app/"
+  },
+  {
     "id": "porfolio",
     "name": "Portfolio",
     "links": [
@@ -7,11 +29,14 @@
       "/reserve/imgs/portfolio2.png",
       "/reserve/imgs/portfolio3.png"
     ],
-    "summary": "개인 포트폴리오 사이트 입니다. 단순한 기능들로 이루어져 있지만 세심하게 만들어 보았습니다. 클린코드를 고려하여 코드를 작성했습니다. 새로 배운 것들을 기존의 코드에 적용해 보았고, 발전해 나가는 모습을 보며 즐겁게 만들었습니다. 타입스크립트의 활용과 컴포넌트 분리에 대하여 자신감을 가지게 되었습니다.  ",
+    "summary": "개인 프로젝트. 기본 포트폴리오 사이트 입니다. 클린코드를 고려하여 코드를 작성했습니다. 타입스크립트의 활용과 컴포넌트 분리에 대하여 자신감을 가지게 되었습니다.  ",
     "main_function": [
-      "react-query / useEffect와 async를 활용한 페이지 별 data fetch"
+      "react-query / useEffect와 async를 활용한 페이지 별 data fetch",
+      "useQuery를 통한 key값에 대한 데이터 요청 효율화",
+      "타입스크립트 활용으로 안정성을 높임"
     ],
     "skills": ["Typescript", "React", "React-Query", "Styled-components"],
+    "retrospective": "https://goddemi.tistory.com/111",
     "git": "https://github.com/Goddemi/portfolio",
     "result": "http://portfolio0124.s3-website.ap-northeast-2.amazonaws.com"
   },
@@ -23,13 +48,14 @@
       "/reserve/imgs/honeytrip2.png",
       "/reserve/imgs/honeytrip4.png"
     ],
-    "summary": "항공권 예약 사이트. 메인 페이지 담당. PM으로 참여하여 페이지간 연결성, 데이터가 어떤 흐름으로 움직여야 하는지 큰 그림을 가지고 접근하는 법을 배웠습니다. 페이지간의 상태 값 전달과 Prop drilling 문제에서 어려움을 겪으며 상태관리 라이브러리의 필요성을 느꼈습니다. 배워야 할 것들과 배우고 싶은 것들을 시행착오를 통해, 필요에 의해 얻어 갈 수 있어서 좋았습니다.",
+    "summary": "7인 팀프로젝트. 항공권 예약 사이트. 메인 페이지 담당. PM으로 참여하여 페이지간 연결성, 데이터가 어떤 흐름으로 움직여야 하는지 큰 그림을 가지고 접근하는 법을 배웠습니다. 페이지간의 상태 값 전달, Prop drilling 문제로 상태관리 라이브러리의 필요성을 느꼈습니다.",
     "main_function": [
       "항공패턴, 날짜, 목적지, 인원, 유저 선택에 따른 state값 생성",
       "Get통신 쿼리 파라미터를 통한 검색",
-      "local storage를 활용한 최근 검색 내역"
+      "local storage를 활용한 최근 검색 내역 구현"
     ],
     "skills": ["Javascript", "React", "Styled-components", "AWS"],
+    "retrospective": "https://goddemi.tistory.com/52",
     "git": "https://github.com/Goddemi/35-2nd-myhoneytrip-frontend",
     "result": "http://2nd-myhoneytrip.s3-website.ap-northeast-2.amazonaws.com/"
   },
@@ -41,7 +67,7 @@
       "/reserve/imgs/weggle2.png",
       "/reserve/imgs/weggle3.png"
     ],
-    "summary": "판매자를 위한 B2B 상품 등록 페이지 구현 담당. 기존의 제이쿼리로 작성된 페이지를 주어진 Figma에 맞게 리액트 버전으로 수정하는 작업이었습니다. UI, 업로더 및 에디터 구현에 라이브러리들을 사용하였는데 커스터마이징에 어려움을 겪었습니다. 라이브러리가 꼭 편리한 것은 아니라는 것을 느꼈습니다. ",
+    "summary": "3인 팀프로젝트. 판매자를 위한 B2B 상품 등록 페이지 구현 담당. 기존의 제이쿼리로 작성된 페이지를 주어진 Figma에 맞게 리액트 버전으로 수정하는 작업이었습니다. UI, 업로더 및 에디터 구현에 라이브러리들을 사용하였는데 커스터마이징에 어려움을 겪었습니다. ",
     "main_function": [
       "image & video 업로드 기능 및  quill Editor를 활용한 상품 상세 정보 입력 기능 구현",
       "상품 등록 post 통신 구현"
@@ -58,13 +84,14 @@
       "/reserve/imgs/ggobuk2.png",
       "/reserve/imgs/ggobuk3.png"
     ],
-    "summary": "홈 리빙 상품 판매 커머스 사이트. 로그인&회원가입, 상품 상세페이지, 장바구니 페이지 구현 담당. 데이터 통신 과정에서 생긴 문제들을 통해 프론트-백 간 소통의 중요성을 배웠습니다. 일정 관리의 중요성을 뼈저리게 느꼈습니다. 후반부에 쫓기듯이 짠 코드들이 제대로 기능하지 못했고 수정하는데 더 많은 시간이 소요되었습니다. ",
+    "summary": "5인 팀프로젝트. 홈 리빙 상품 판매 커머스 사이트. 로그인&회원가입, 상품 상세페이지, 장바구니 페이지 구현 담당. 데이터 통신 과정에서 생긴 문제들을 통해 프론트-백 간 소통의 중요성을 배웠습니다. 일정 관리의 중요성을 느꼈습니다.",
     "main_function": [
       "로그인(토큰 발급, 저장) & 회원가입 통신 / 유효성 검사",
       "상품 상세 페이지 : useParams를 이용한 동적인 상세 페이지",
       "옵션 값에 따른 가격 변화, post를 통한 장바구니 담기",
       "장바구니 페이지 : 토큰에 따른 이용자 별 장바구니 가져오기"
     ],
+    "retrospective": "https://goddemi.tistory.com/45",
     "skills": ["Javascript", "React", "Sass", "AWS"],
     "git": "https://github.com/Goddemi/35-1st-TURTLE-HOME-frontend",
     "result": "http://ourturtlehome.s3-website.ap-northeast-2.amazonaws.com/"

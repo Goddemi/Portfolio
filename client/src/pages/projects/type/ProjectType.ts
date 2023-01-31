@@ -4,6 +4,7 @@ export default interface ProjectType {
   links?: string[];
   summary: string;
   main_function: (string | number)[];
+  retrospective?: string;
   skills: (string | number)[];
   git: string;
   result?: string;

@@ -6,6 +6,7 @@ const Description: React.FC<ProjectType> = ({
   summary,
   main_function,
   skills,
+  retrospective,
   git,
   result,
 }) => {
@@ -24,7 +25,10 @@ const Description: React.FC<ProjectType> = ({
           return <Skill key={i}>{skill}</Skill>;
         })}
       </Box>
-
+      <Box>
+        <Key>후기 : </Key>
+        <a href={retrospective}>BlogLink</a>
+      </Box>
       <Box>
         <Key>Git : </Key>
         <a href={git}>GitLink</a>
@@ -58,6 +62,7 @@ const Summary = styled.div`
 
 const Box = styled.div`
   margin: 10px 0;
+  font-size: 15px;
 
   a {
     color: black;

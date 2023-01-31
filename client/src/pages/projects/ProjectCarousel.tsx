@@ -21,7 +21,19 @@ const ProjectCarousel = ({ data }: { data: ProjectType[] | undefined }) => {
   return (
     <Slider {...settings}>
       {data?.map(
-        ({ name, links, summary, main_function, skills, git, result }, i) => {
+        (
+          {
+            name,
+            links,
+            summary,
+            main_function,
+            skills,
+            retrospective,
+            git,
+            result,
+          },
+          i
+        ) => {
           return (
             <Container key={name}>
               <Header>- {name} -</Header>
@@ -31,6 +43,7 @@ const ProjectCarousel = ({ data }: { data: ProjectType[] | undefined }) => {
                   summary={summary}
                   main_function={main_function}
                   skills={skills}
+                  retrospective={retrospective}
                   git={git}
                   result={result}
                 />
@@ -49,7 +62,7 @@ const ProjectCarousel = ({ data }: { data: ProjectType[] | undefined }) => {
 export default ProjectCarousel;
 
 const Container = styled.div`
-  padding: 40px 50px 20px 50px;
+  padding: 40px 10px 20px 10px;
   color: black;
   position: relative;
 `;
