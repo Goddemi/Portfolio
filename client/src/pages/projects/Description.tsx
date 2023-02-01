@@ -27,17 +27,23 @@ const Description: React.FC<ProjectType> = ({
       </Box>
       <Box>
         <Key>후기 : </Key>
-        <a href={retrospective}>BlogLink</a>
+        <a href={retrospective} target="_blank" rel="noreferrer">
+          BlogLink
+        </a>
       </Box>
       <Box>
         <Key>Git : </Key>
-        <a href={git}>GitLink</a>
+        <a href={git} target="_blank" rel="noreferrer">
+          GitLink
+        </a>
       </Box>
 
       {result ? (
         <Box>
           <Key>Result : </Key>
-          <a href={result}>SiteLink</a>
+          <a href={result} target="_blank" rel="noreferrer">
+            SiteLink
+          </a>
         </Box>
       ) : (
         ""
